@@ -1,0 +1,37 @@
+shell input touchscreen tap 40 40
+shell dumpsys input
+shell dumpsys sensorservice
+shell am start -a android.intent.action.VIEW -d geo:0,0?q=<latitude>,<longitude>(Label)
+shell am start -a android.settings.WIFI_SETTINGS
+shell am start -a android.settings.BLUETOOTH_SETTINGS
+shell input keyevent KEYCODE_VIBRATE
+shell am start -a android.intent.action.VIEW -d \'geo:0,0?q=<latitude>,<longitude>(Label)\'
+shell dumpsys battery
+shell df
+shell wm size
+shell wm density
+shell ping -c 10 www.google.com
+shell dd if=/dev/zero of=/sdcard/testfile bs=1024 count=1024
+shell dd if=/sdcard/testfile of=/dev/null bs=1024 count=1024
+shell lsusb
+shell dumpsys nfc
+shell settings put system flashlight_available 1
+shell am start -a android.intent.action.MAIN -n com.android.systemui/com.android.systemui.flashlight.FlashlightActivity
+shell dumpsys proximity
+shell monkey -p com.android.monkey -v 500
+shell am start -a android.intent.action.MAIN -n com.android.settings/.DevelopmentSettings
+shell settings put system accelerometer_rotation 1
+shell settings put system user_rotation 1
+shell am start -a android.provider.MediaStore.RECORD_SOUND
+shell am start -a android.media.action.VIDEO_CAPTURE
+shell input keyevent 120
+shell cat /proc/cpuinfo
+shell dumpsys batteryinfo
+shell df -h
+shell am start -a android.settings.WIFI_DISPLAY_SETTINGS
+shell am start -a android.intent.action.MAIN -n com.android.phone/.NetworkSetting
+shell getprop
+shell getenforce
+
+
+

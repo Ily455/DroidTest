@@ -1,0 +1,3000 @@
+PASS: shell input touchscreen tap 40 40
+PASS: shell dumpsys input
+INPUT MANAGER (dumpsys input)
+
+Input Manager State:
+  Interactive: false
+  System UI Visibility: 0x8
+  Pointer Speed: 0
+  Pointer Gestures Enabled: true
+  Show Touches: false
+  Pointer Capture Enabled: false
+
+Event Hub State:
+  BuiltInKeyboardId: -2
+  Devices:
+    -1: Virtual
+      Classes: 0x40000023
+      Path: <virtual>
+      Enabled: true
+      Descriptor: a718a782d34bc767f4689c232d64d527998ea7fd
+      Location: 
+      ControllerNumber: 0
+      UniqueId: <virtual>
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Virtual.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    1: uinput-fpc
+      Classes: 0x00000001
+      Path: /dev/input/event4
+      Enabled: true
+      Descriptor: 0a2365ce4f51162539f3bf91469900de3a450172
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0006, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/uinput-fpc.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    2: ACCDET
+      Classes: 0x00000081
+      Path: /dev/input/event0
+      Enabled: true
+      Descriptor: 1c78f7e0d16d4dbc8d3ab93943523f379203f90b
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0019, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/ACCDET.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    3: fpc_irq@fingerprint
+      Classes: 0x00000001
+      Path: /dev/input/event3
+      Enabled: true
+      Descriptor: dad8bc819b573998ec22ca3952b1006fc1aa1a82
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    4: mtk-tpd
+      Classes: 0x00000015
+      Path: /dev/input/event2
+      Enabled: true
+      Descriptor: 84931e976ab60191371c1c95baf408538ca4c4c5
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    5: mtk-kpd
+      Classes: 0x00000001
+      Path: /dev/input/event1
+      Enabled: true
+      Descriptor: f0d2e427e7a05eb6d316f5e14800c5ac7b6aee79
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0019, vendor=0x2454, product=0x6500, version=0x0010
+      KeyLayoutFile: /system/usr/keylayout/mtk-kpd.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+
+Input Reader State:
+  Device -1: Virtual
+    Generation: 2
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00000301
+    KeyboardType: 2
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 2
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 1: uinput-fpc
+    Generation: 12
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00000101
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 491524951503000
+  Device 2: ACCDET
+    Generation: 10
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x80000101
+    KeyboardType: 1
+    Switch Input Mapper:
+      SwitchValues: 0
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 3: fpc_irq@fingerprint
+    Generation: 8
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00000101
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 4: mtk-tpd
+    Generation: 22
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00001103
+    KeyboardType: 1
+    Motion Ranges:
+      X: source=0x00001002, min=0.000, max=719.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=0x00001002, min=0.000, max=1439.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=0x00001002, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      SIZE: source=0x00001002, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      TOUCH_MAJOR: source=0x00001002, min=0.000, max=1609.969, flat=0.000, fuzz=0.000, resolution=0.000
+      TOUCH_MINOR: source=0x00001002, min=0.000, max=1609.969, flat=0.000, fuzz=0.000, resolution=0.000
+      TOOL_MAJOR: source=0x00001002, min=0.000, max=1609.969, flat=0.000, fuzz=0.000, resolution=0.000
+      TOOL_MINOR: source=0x00001002, min=0.000, max=1609.969, flat=0.000, fuzz=0.000, resolution=0.000
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+    Touch Input Mapper (mode - direct):
+      Parameters:
+        GestureMode: multi-touch
+        DeviceType: touchScreen
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId=''
+        OrientationAware: true
+      Raw Touch Axes:
+        X: min=0, max=720, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=1440, flat=0, fuzz=0, resolution=0
+        Pressure: unknown range
+        TouchMajor: min=0, max=100, flat=0, fuzz=0, resolution=0
+        TouchMinor: min=0, max=100, flat=0, fuzz=0, resolution=0
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: min=0, max=10, flat=0, fuzz=0, resolution=0
+        Slot: min=0, max=9, flat=0, fuzz=0, resolution=0
+      Calibration:
+        touch.size.calibration: geometric
+        touch.pressure.calibration: none
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport: displayId=0, orientation=0, logicalFrame=[0, 0, 720, 1440], physicalFrame=[0, 0, 720, 1440], deviceSize=[720, 1440]
+      SurfaceWidth: 720px
+      SurfaceHeight: 1440px
+      SurfaceLeft: 0
+      SurfaceTop: 0
+      SurfaceOrientation: 0
+      Translation and Scaling Factors:
+        XTranslate: 0.000
+        YTranslate: 0.000
+        XScale: 0.999
+        YScale: 0.999
+        XPrecision: 1.001
+        YPrecision: 1.001
+        GeometricScale: 0.999
+        PressureScale: 0.000
+        SizeScale: 0.010
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=0
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=0
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Device 5: mtk-kpd
+    Generation: 4
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00000101
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 491530291438000
+  Configuration:
+    ExcludedDeviceNames: []
+    VirtualKeyQuietTime: 100.0ms
+    PointerVelocityControlParameters: scale=1.000, lowThreshold=500.000, highThreshold=3000.000, acceleration=3.000
+    WheelVelocityControlParameters: scale=1.000, lowThreshold=15.000, highThreshold=50.000, acceleration=4.000
+    PointerGesture:
+      Enabled: true
+      QuietInterval: 100.0ms
+      DragMinSwitchSpeed: 50.0px/s
+      TapInterval: 150.0ms
+      TapDragInterval: 300.0ms
+      TapSlop: 20.0px
+      MultitouchSettleInterval: 100.0ms
+      MultitouchMinDistance: 15.0px
+      SwipeTransitionAngleCosine: 0.3
+      SwipeMaxWidthRatio: 0.2
+      MovementSpeedRatio: 0.8
+      ZoomSpeedRatio: 0.3
+      Viewports:
+        ViewportInternal:
+          Viewport: displayId=0, orientation=0, uniqueId='', logicalFrame=[0, 0, 720, 1440], physicalFrame=[0, 0, 720, 1440], deviceSize=[720, 1440]
+        ViewportExternal:
+          Viewport: displayId=0, orientation=0, uniqueId='', logicalFrame=[0, 0, 720, 1440], physicalFrame=[0, 0, 720, 1440], deviceSize=[720, 1440]
+        ViewportVirtual:
+
+Input Dispatcher State:
+  DispatchEnabled: 1
+  DispatchFrozen: 0
+  FocusedApplication: name='AppWindowToken{cbd69ae token=Token{4aa73b0 ActivityRecord{70fa02d u0 com.android.camera/.Camera t6200}}}', dispatchingTimeout=8000.000ms
+  FocusedWindow: name='Window{3e6268d u0 StatusBar}'
+  TouchStates: <no displays touched>
+  Windows:
+    0: name='Window{d63af94 u0 InputMethod}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x81800108, type=0x000007db, layer=0, frame=[0,48][720,1440], scale=1.000000, touchableRegion=[0,934][720,1440], inputFeatures=0x00000000, ownerPid=20091, ownerUid=10172, dispatchingTimeout=8000.000ms
+    1: name='Window{735707d u0 RoundCorner}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=true, canReceiveKeys=false, flags=0x01000518, type=0x000007df, layer=0, frame=[0,1400][720,1440], scale=1.000000, touchableRegion=[0,1400][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    2: name='Window{ad7531a u0 RoundCorner}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=true, canReceiveKeys=false, flags=0x01000518, type=0x000007df, layer=0, frame=[0,0][720,40], scale=1.000000, touchableRegion=[0,0][720,40], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    3: name='Window{12e8a1d u0 GestureStubRight}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x01000128, type=0x000007eb, layer=0, frame=[690,550][720,1414], scale=1.000000, touchableRegion=[690,550][720,1414], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    4: name='Window{e213283 u0 GestureStubLeft}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x01000128, type=0x000007eb, layer=0, frame=[0,550][30,1414], scale=1.000000, touchableRegion=[0,550][30,1414], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    5: name='Window{b8666a4 u0 GestureStub}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x00000128, type=0x000007eb, layer=0, frame=[0,1414][720,1440], scale=1.000000, touchableRegion=[0,1414][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    6: name='Window{705f8e3 u0 rapid_charge}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=true, canReceiveKeys=false, flags=0x05010508, type=0x000007d9, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    7: name='Window{3e6268d u0 StatusBar}', displayId=0, paused=false, hasFocus=true, hasWallpaper=false, visible=true, canReceiveKeys=true, flags=0x81860040, type=0x000007d0, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000004, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    8: name='Window{da20107 u0 Aspect}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x01000128, type=0x000007d3, layer=0, frame=[360,1440][360,1440], scale=1.000000, touchableRegion=<empty>, inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    9: name='Window{a60d93f u0 AssistPreviewPanel}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x01000118, type=0x000007f1, layer=0, frame=[0,1440][720,1440], scale=1.000000, touchableRegion=<empty>, inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    10: name='Window{e4e517e u0 DockedStackDivider}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x21840028, type=0x000007f2, layer=0, frame=[0,0][0,0], scale=1.000000, touchableRegion=[-96,0][96,96], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    11: name='Window{733d51e u0 com.android.camera/com.android.camera.Camera}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x85810520, type=0x00000001, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=20363, ownerUid=10022, dispatchingTimeout=8000.000ms
+    12: name='Window{2768ed5 u0 com.miui.home/com.miui.home.launcher.Launcher}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x81850118, type=0x00000004, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=5472, ownerUid=1000, dispatchingTimeout=8000.000ms
+    13: name='Window{28fa0b3 u0 com.miui.home/com.miui.home.launcher.Launcher}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x85910120, type=0x00000001, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=20271, ownerUid=10029, dispatchingTimeout=8000.000ms
+    14: name='Window{8ad6137 u0 com.android.systemui/com.android.systemui.recents.RecentsActivity}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x81910124, type=0x00000001, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    15: name='Window{2431032 u0 com.android.systemui.ImageWallpaper}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x00010318, type=0x000007dd, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+  MonitoringChannels:
+    0: 'WindowManager (server)'
+  RecentQueue: length=10
+    KeyEvent, age=262522.6ms
+    KeyEvent, age=262522.6ms
+    MotionEvent, age=209889.6ms
+    MotionEvent, age=209889.6ms
+    MotionEvent, age=161648.6ms
+    MotionEvent, age=161648.6ms
+    MotionEvent, age=34186.6ms
+    MotionEvent, age=34186.6ms
+    MotionEvent, age=130.6ms
+    MotionEvent, age=130.6ms
+  PendingEvent: <none>
+  InboundQueue: <empty>
+  ReplacedKeys: <empty>
+  Connections:
+    0: channelName='WindowManager (server)', windowName='monitor', status=NORMAL, monitor=true, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    1: channelName='da20107 Aspect (server)', windowName='Window{da20107 u0 Aspect}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    2: channelName='e213283 GestureStubBottom (server)', windowName='Window{e213283 u0 GestureStubLeft}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    3: channelName='12e8a1d GestureStubBottom (server)', windowName='Window{12e8a1d u0 GestureStubRight}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    4: channelName='8ad6137 com.android.systemui/com.android.systemui.recents.RecentsActivity (server)', windowName='Window{8ad6137 u0 com.android.systemui/com.android.systemui.recents.RecentsActivity}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    5: channelName='28fa0b3 com.miui.home/com.miui.home.launcher.Launcher (server)', windowName='Window{28fa0b3 u0 com.miui.home/com.miui.home.launcher.Launcher}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    6: channelName='2431032 com.android.systemui.ImageWallpaper (server)', windowName='Window{2431032 u0 com.android.systemui.ImageWallpaper}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    7: channelName='2768ed5 com.miui.home/com.miui.home.launcher.Launcher (server)', windowName='Window{2768ed5 u0 com.miui.home/com.miui.home.launcher.Launcher}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    8: channelName='d63af94 InputMethod (server)', windowName='Window{d63af94 u0 InputMethod}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    9: channelName='733d51e com.android.camera/com.android.camera.Camera (server)', windowName='Window{733d51e u0 com.android.camera/com.android.camera.Camera}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    10: channelName='e4e517e DockedStackDivider (server)', windowName='Window{e4e517e u0 DockedStackDivider}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    11: channelName='ad7531a RoundCorner (server)', windowName='Window{ad7531a u0 RoundCorner}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    12: channelName='a60d93f AssistPreviewPanel (server)', windowName='Window{a60d93f u0 AssistPreviewPanel}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    13: channelName='b8666a4 GestureStub (server)', windowName='Window{b8666a4 u0 GestureStub}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    14: channelName='705f8e3 rapid_charge (server)', windowName='Window{705f8e3 u0 rapid_charge}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    15: channelName='3e6268d StatusBar (server)', windowName='Window{3e6268d u0 StatusBar}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    16: channelName='735707d RoundCorner (server)', windowName='Window{735707d u0 RoundCorner}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    17: channelName='pip_input_consumer (server)', windowName='?', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+  AppSwitch: not pending
+  Configuration:
+    KeyRepeatDelay: 50.0ms
+    KeyRepeatTimeout: 500.0ms
+
+
+PASS: shell dumpsys sensorservice
+Sensor Device:
+Total 11 h/w sensors, 11 running:
+0x00000001) active-count = 1; sampling_period(ms) = {10.0}, selected = 10.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+0x00000011) active-count = 1; sampling_period(ms) = {1.0}, selected = 1.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+0x00000065) active-count = 1; sampling_period(ms) = {200.0}, selected = 200.00 ms; batching_period(ms) = {300000.0}, selected = 300000.00 ms
+Sensor List:
+0x00000001) ST_LIS3DHTR               | lis3dh          | ver: 1 | type: android.sensor.accelerometer(1) | perm: n/a | flags: 0x00000000
+	continuous | minRate=50.00Hz | maxRate=200.00Hz | FIFO (max,reserved) = (4500, 3000) events | non-wakeUp | 
+0x00000002) AK09918C                  | akl             | ver: 1 | type: android.sensor.magnetic_field(2) | perm: n/a | flags: 0x00000000
+	continuous | minRate=5.00Hz | maxRate=50.00Hz | FIFO (max,reserved) = (4500, 600) events | non-wakeUp | 
+0x00000003) ORIENTATION               | MTK             | ver: 1 | type: android.sensor.orientation(3) | perm: n/a | flags: 0x00000000
+	continuous | minRate=50.00Hz | maxRate=200.00Hz | no batching | non-wakeUp | 
+0x00000005) STK3321                   | stk3321_l       | ver: 1 | type: android.sensor.light(5) | perm: n/a | flags: 0x00000002
+	on-change | minRate=1.00Hz | minDelay=0us | no batching | non-wakeUp | 
+0x00000008) STK3321                   | stk3321_p       | ver: 1 | type: android.sensor.proximity(8) | perm: n/a | flags: 0x00000003
+	on-change | minRate=1.00Hz | minDelay=0us | FIFO (max,reserved) = (4500, 100) events | wakeUp | 
+0x00000009) GRAVITY                   | MTK             | ver: 1 | type: android.sensor.gravity(9) | perm: n/a | flags: 0x00000000
+	continuous | minRate=50.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | 
+0x00000011) SIGNIFICANT_MOTION        | MTK             | ver: 1 | type: android.sensor.significant_motion(17) | perm: n/a | flags: 0x00000005
+	one-shot | maxDelay=0us | minDelay=-1us | no batching | wakeUp | 
+0x00000012) STEP_DETECTOR             | MTK             | ver: 1 | type: android.sensor.step_detector(18) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (4500, 100) events | non-wakeUp | 
+0x00000013) STEP_COUNTER              | MTK             | ver: 1 | type: android.sensor.step_counter(19) | perm: n/a | flags: 0x00000002
+	on-change | minRate=1.00Hz | minDelay=0us | no batching | non-wakeUp | 
+0x00000016) TILT_DETECTOR             | MTK             | ver: 1 | type: android.sensor.tilt_detector(22) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | no batching | wakeUp | 
+0x00000065) STEP_DETECTOR_WAKEUP      | MTK             | ver: 1 | type: android.sensor.step_detector(18) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (4500, 100) events | wakeUp | 
+0x5f67656f) GeoMag Rotation Vector Sensor | AOSP            | ver: 3 | type: android.sensor.geomagnetic_rotation_vector(20) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=200.00Hz | no batching | non-wakeUp | 
+Fusion States:
+9-axis fusion disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+game fusion(no mag) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+geomag fusion (no gyro) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+Recent Sensor events:
+TILT_DETECTOR: last 10 events
+	 1 (ts=457758.332191377, wall=19:42:32.793) 1.00, 
+	 2 (ts=457994.645621852, wall=19:46:29.105) 1.00, 
+	 3 (ts=458195.695790787, wall=19:49:50.156) 1.00, 
+	 4 (ts=458340.737583257, wall=19:52:15.197) 1.00, 
+	 5 (ts=458596.740776119, wall=19:56:31.200) 1.00, 
+	 6 (ts=709329.027355388, wall=17:35:23.488) 0.00, 
+	 7 (ts=709555.744249436, wall=17:39:10.204) 1.00, 
+	 8 (ts=709899.694206493, wall=17:44:54.170) 0.00, 
+	 9 (ts=709931.073235567, wall=17:45:25.533) 1.00, 
+	10 (ts=710005.818419181, wall=17:46:40.279) 0.00, 
+SIGNIFICANT_MOTION: last 50 events
+	 1 (ts=370432.726422307, wall=19:27:07.188) 1.00, 
+	 2 (ts=376033.521352697, wall=21:00:27.982) 1.00, 
+	 3 (ts=378309.178380172, wall=21:38:23.640) 1.00, 
+	 4 (ts=379709.755548307, wall=22:01:44.217) 1.00, 
+	 5 (ts=381757.652594321, wall=22:35:52.114) 1.00, 
+	 6 (ts=385010.981661381, wall=23:30:05.444) 1.00, 
+	 7 (ts=386778.294121378, wall=23:59:32.756) 1.00, 
+	 8 (ts=388647.123399304, wall=00:30:41.585) 1.00, 
+	 9 (ts=390938.409069956, wall=01:08:52.872) 1.00, 
+	10 (ts=433714.315340902, wall=13:01:48.777) 1.00, 
+	11 (ts=438987.855451926, wall=14:29:42.317) 1.00, 
+	12 (ts=445303.020823374, wall=16:14:57.482) 1.00, 
+	13 (ts=447812.253962476, wall=16:56:46.716) 1.00, 
+	14 (ts=456290.303427056, wall=19:18:04.765) 1.00, 
+	15 (ts=457058.127970244, wall=19:30:52.590) 1.00, 
+	16 (ts=457658.814855223, wall=19:40:53.276) 1.00, 
+	17 (ts=461191.763716007, wall=20:39:46.226) 1.00, 
+	18 (ts=464887.128565387, wall=21:41:21.592) 1.00, 
+	19 (ts=480653.414818802, wall=02:04:07.878) 1.00, 
+	20 (ts=514180.933137265, wall=11:22:55.395) 1.00, 
+	21 (ts=522219.232968590, wall=13:36:53.695) 1.00, 
+	22 (ts=523290.081141187, wall=13:54:44.543) 1.00, 
+	23 (ts=523569.297223050, wall=13:59:23.759) 1.00, 
+	24 (ts=527009.874181304, wall=14:56:44.336) 1.00, 
+	25 (ts=538690.518356185, wall=18:11:24.980) 1.00, 
+	26 (ts=542067.242203143, wall=19:07:41.704) 1.00, 
+	27 (ts=543460.247301448, wall=19:30:54.709) 1.00, 
+	28 (ts=547566.660582896, wall=20:39:21.123) 1.00, 
+	29 (ts=552477.710317684, wall=22:01:12.172) 1.00, 
+	30 (ts=563825.825296526, wall=01:10:20.286) 1.00, 
+	31 (ts=563860.621408758, wall=01:10:55.082) 1.00, 
+	32 (ts=599731.094932469, wall=11:08:45.557) 1.00, 
+	33 (ts=606005.274034997, wall=12:53:19.735) 1.00, 
+	34 (ts=608871.294081159, wall=13:41:05.756) 1.00, 
+	35 (ts=610122.777362602, wall=14:01:57.240) 1.00, 
+	36 (ts=624675.603997433, wall=18:04:30.065) 1.00, 
+	37 (ts=625293.489228152, wall=18:14:47.951) 1.00, 
+	38 (ts=629220.034892588, wall=19:20:14.497) 1.00, 
+	39 (ts=644879.292840203, wall=23:41:13.754) 1.00, 
+	40 (ts=683696.739743917, wall=10:28:11.201) 1.00, 
+	41 (ts=685048.885540152, wall=10:50:43.348) 1.00, 
+	42 (ts=708125.757465194, wall=17:15:20.233) 1.00, 
+	43 (ts=717277.313654804, wall=19:47:51.775) 1.00, 
+	44 (ts=739550.049626386, wall=01:59:04.510) 1.00, 
+	45 (ts=768263.418810575, wall=09:57:37.880) 1.00, 
+	46 (ts=773184.290465062, wall=11:19:38.752) 1.00, 
+	47 (ts=774197.271456117, wall=11:36:31.733) 1.00, 
+	48 (ts=777677.994107983, wall=12:34:32.456) 1.00, 
+	49 (ts=777781.305352912, wall=12:36:15.767) 1.00, 
+	50 (ts=780330.399951578, wall=13:18:44.860) 1.00, 
+STEP_DETECTOR_WAKEUP: last 10 events
+	 1 (ts=780628.127749519, wall=13:23:42.588) 1.00, 
+	 2 (ts=780628.127750827, wall=13:23:42.588) 1.00, 
+	 3 (ts=780628.127752135, wall=13:23:42.588) 1.00, 
+	 4 (ts=780628.127753519, wall=13:23:42.588) 1.00, 
+	 5 (ts=780628.127754827, wall=13:23:42.588) 1.00, 
+	 6 (ts=780628.127756212, wall=13:23:42.588) 1.00, 
+	 7 (ts=780628.127757519, wall=13:23:42.588) 1.00, 
+	 8 (ts=780628.127758827, wall=13:23:42.588) 1.00, 
+	 9 (ts=780628.131546212, wall=13:23:42.591) 1.00, 
+	10 (ts=780628.131547981, wall=13:23:42.591) 1.00, 
+GRAVITY: last 10 events
+	 1 (ts=709575.338035453, wall=17:39:29.800) 0.01, 0.91, 9.76, 
+	 2 (ts=709575.348165304, wall=17:39:29.820) -0.20, 0.94, 9.76, 
+	 3 (ts=709575.358295151, wall=17:39:29.820) -0.20, 0.94, 9.76, 
+	 4 (ts=709575.368416737, wall=17:39:29.840) -0.42, 0.97, 9.75, 
+	 5 (ts=709575.378538318, wall=17:39:29.840) -0.42, 0.97, 9.75, 
+	 6 (ts=709575.388662504, wall=17:39:29.860) -0.64, 1.00, 9.73, 
+	 7 (ts=709575.398786655, wall=17:39:29.860) -0.64, 1.00, 9.73, 
+	 8 (ts=709575.408786670, wall=17:39:29.871) -0.64, 1.00, 9.73, 
+	 9 (ts=709575.418968964, wall=17:39:29.891) -0.83, 1.04, 9.72, 
+	10 (ts=709575.429150929, wall=17:39:29.891) -0.83, 1.04, 9.72, 
+STK3321: last 50 events
+	 1 (ts=824308.770421953, wall=01:31:43.230) 23.00, 0.00, 0.00, 
+	 2 (ts=824309.755456338, wall=01:31:44.215) 26.00, 0.00, 0.00, 
+	 3 (ts=824310.155465568, wall=01:31:44.615) 23.00, 0.00, 0.00, 
+	 4 (ts=824310.355435415, wall=01:31:44.815) 26.00, 0.00, 0.00, 
+	 5 (ts=824314.955439492, wall=01:31:49.415) 23.00, 0.00, 0.00, 
+	 6 (ts=824322.955504646, wall=01:31:57.415) 20.00, 0.00, 0.00, 
+	 7 (ts=824323.155466723, wall=01:31:57.615) 23.00, 0.00, 0.00, 
+	 8 (ts=824324.770430262, wall=01:31:59.230) 20.00, 0.00, 0.00, 
+	 9 (ts=824325.155437339, wall=01:31:59.615) 23.00, 0.00, 0.00, 
+	10 (ts=824325.555385569, wall=01:32:00.015) 20.00, 0.00, 0.00, 
+	11 (ts=824325.755454031, wall=01:32:00.215) 23.00, 0.00, 0.00, 
+	12 (ts=824326.355460954, wall=01:32:00.815) 29.00, 0.00, 0.00, 
+	13 (ts=824326.555426877, wall=01:32:01.015) 26.00, 0.00, 0.00, 
+	14 (ts=824327.555447339, wall=01:32:02.015) 62.00, 0.00, 0.00, 
+	15 (ts=824327.756324569, wall=01:32:02.216) 83.00, 0.00, 0.00, 
+	16 (ts=824327.955457108, wall=01:32:02.415) 94.00, 0.00, 0.00, 
+	17 (ts=824328.155815569, wall=01:32:02.615) 89.00, 0.00, 0.00, 
+	18 (ts=824328.355804339, wall=01:32:02.815) 77.00, 0.00, 0.00, 
+	19 (ts=824328.555422646, wall=01:32:03.015) 62.00, 0.00, 0.00, 
+	20 (ts=824547.531314429, wall=01:35:41.991) 20.00, 0.00, 0.00, 
+	21 (ts=824548.116426813, wall=01:35:42.576) 17.00, 0.00, 0.00, 
+	22 (ts=824548.715872429, wall=01:35:43.175) 14.00, 0.00, 0.00, 
+	23 (ts=824548.916436890, wall=01:35:43.376) 17.00, 0.00, 0.00, 
+	24 (ts=824549.116450890, wall=01:35:43.576) 14.00, 0.00, 0.00, 
+	25 (ts=824549.716434583, wall=01:35:44.176) 17.00, 0.00, 0.00, 
+	26 (ts=824550.116469967, wall=01:35:44.576) 20.00, 0.00, 0.00, 
+	27 (ts=824550.316517813, wall=01:35:44.776) 17.00, 0.00, 0.00, 
+	28 (ts=824550.716418275, wall=01:35:45.176) 14.00, 0.00, 0.00, 
+	29 (ts=824550.916495814, wall=01:35:45.376) 17.00, 0.00, 0.00, 
+	30 (ts=824551.916416814, wall=01:35:46.376) 20.00, 0.00, 0.00, 
+	31 (ts=824552.715993352, wall=01:35:47.175) 17.00, 0.00, 0.00, 
+	32 (ts=824554.316449352, wall=01:35:48.776) 20.00, 0.00, 0.00, 
+	33 (ts=824554.516343121, wall=01:35:48.976) 26.00, 0.00, 0.00, 
+	34 (ts=824554.716445660, wall=01:35:49.176) 37.00, 0.00, 0.00, 
+	35 (ts=824554.916188583, wall=01:35:49.376) 77.00, 0.00, 0.00, 
+	36 (ts=824555.116387352, wall=01:35:49.576) 83.00, 0.00, 0.00, 
+	37 (ts=824555.316424968, wall=01:35:49.776) 80.00, 0.00, 0.00, 
+	38 (ts=826266.016045070, wall=02:04:20.475) 62.00, 0.00, 0.00, 
+	39 (ts=826266.201155377, wall=02:04:20.661) 46.00, 0.00, 0.00, 
+	40 (ts=826266.401137685, wall=02:04:20.860) 26.00, 0.00, 0.00, 
+	41 (ts=826266.601230685, wall=02:04:21.061) 20.00, 0.00, 0.00, 
+	42 (ts=826269.201297454, wall=02:04:23.661) 17.00, 0.00, 0.00, 
+	43 (ts=826269.401615993, wall=02:04:23.861) 20.00, 0.00, 0.00, 
+	44 (ts=826270.016454685, wall=02:04:24.476) 23.00, 0.00, 0.00, 
+	45 (ts=826270.401123993, wall=02:04:24.860) 26.00, 0.00, 0.00, 
+	46 (ts=826271.001149762, wall=02:04:25.460) 23.00, 0.00, 0.00, 
+	47 (ts=826273.001096378, wall=02:04:27.460) 20.00, 0.00, 0.00, 
+	48 (ts=826273.201181916, wall=02:04:27.661) 23.00, 0.00, 0.00, 
+	49 (ts=826273.401153993, wall=02:04:27.861) 46.00, 0.00, 0.00, 
+	50 (ts=826273.601235916, wall=02:04:28.061) 59.00, 0.00, 0.00, 
+STK3321: last 10 events
+	 1 (ts=824547.599752583, wall=01:35:42.060) 5.00, 0.00, 0.00, 
+	 2 (ts=824550.677934198, wall=01:35:45.137) 0.00, 0.00, 0.00, 
+	 3 (ts=824550.725738198, wall=01:35:45.185) 5.00, 0.00, 0.00, 
+	 4 (ts=826265.793636147, wall=02:04:20.258) 5.00, 0.00, 0.00, 
+	 5 (ts=826265.793796762, wall=02:04:20.258) 5.00, 0.00, 0.00, 
+	 6 (ts=826266.137160454, wall=02:04:20.597) 5.00, 0.00, 0.00, 
+	 7 (ts=826268.590271454, wall=02:04:23.050) 0.00, 0.00, 0.00, 
+	 8 (ts=826268.733602993, wall=02:04:23.193) 5.00, 0.00, 0.00, 
+	 9 (ts=826269.210991608, wall=02:04:23.670) 0.00, 0.00, 0.00, 
+	10 (ts=826269.401627224, wall=02:04:23.861) 5.00, 0.00, 0.00, 
+ORIENTATION: last 10 events
+	 1 (ts=338427.119866911, wall=10:33:41.591) 290.88, -45.84, -1.38, 
+	 2 (ts=338427.129992602, wall=10:33:41.591) 290.88, -45.84, -1.38, 
+	 3 (ts=338427.140120564, wall=10:33:41.612) 290.86, -45.16, -1.84, 
+	 4 (ts=338427.150248525, wall=10:33:41.612) 290.86, -45.16, -1.84, 
+	 5 (ts=338427.160374134, wall=10:33:41.632) 290.84, -46.19, -1.38, 
+	 6 (ts=338427.170499713, wall=10:33:41.632) 290.84, -46.19, -1.38, 
+	 7 (ts=338427.180624760, wall=10:33:41.652) 290.86, -47.62, -1.02, 
+	 8 (ts=338427.190749761, wall=10:33:41.652) 290.86, -47.62, -1.02, 
+	 9 (ts=338427.200878349, wall=10:33:41.673) 291.05, -50.75, -0.53, 
+	10 (ts=338427.211006962, wall=10:33:41.673) 291.05, -50.75, -0.53, 
+AK09918C: last 10 events
+	 1 (ts=824625.201556978, wall=01:36:59.682) 65.52, -32.76, -28.68, 
+	 2 (ts=824625.221561247, wall=01:36:59.682) 65.82, -32.28, -29.04, 
+	 3 (ts=824625.241565500, wall=01:36:59.762) 65.28, -32.28, -29.40, 
+	 4 (ts=824625.261562153, wall=01:36:59.762) 65.16, -32.46, -29.82, 
+	 5 (ts=824625.281566442, wall=01:36:59.762) 64.98, -32.16, -29.70, 
+	 6 (ts=824625.301563097, wall=01:36:59.762) 64.44, -32.82, -29.34, 
+	 7 (ts=824625.321559749, wall=01:36:59.842) 64.86, -32.76, -29.46, 
+	 8 (ts=824625.341564038, wall=01:36:59.842) 65.22, -32.46, -29.52, 
+	 9 (ts=824625.361560691, wall=01:36:59.842) 65.10, -32.34, -29.46, 
+	10 (ts=824625.381557364, wall=01:36:59.842) 65.58, -32.16, -29.28, 
+ST_LIS3DHTR: last 50 events
+	 1 (ts=827927.451389146, wall=02:32:01.922) -0.09, -0.06, 9.70, 
+	 2 (ts=827927.461509957, wall=02:32:01.922) -0.09, -0.14, 9.70, 
+	 3 (ts=827927.471639814, wall=02:32:01.943) -0.01, -0.14, 9.70, 
+	 4 (ts=827927.481769655, wall=02:32:01.943) -0.09, -0.14, 9.70, 
+	 5 (ts=827927.491894545, wall=02:32:01.963) -0.09, -0.14, 9.70, 
+	 6 (ts=827927.502019472, wall=02:32:01.963) -0.09, -0.14, 9.62, 
+	 7 (ts=827927.512144671, wall=02:32:01.983) -0.01, -0.14, 9.78, 
+	 8 (ts=827927.522269862, wall=02:32:01.983) -0.01, -0.14, 9.78, 
+	 9 (ts=827927.532398367, wall=02:32:02.004) -0.09, -0.06, 9.70, 
+	10 (ts=827927.542526868, wall=02:32:02.004) -0.09, -0.06, 9.70, 
+	11 (ts=827927.552655913, wall=02:32:02.024) -0.09, -0.14, 9.70, 
+	12 (ts=827927.562784952, wall=02:32:02.024) -0.09, -0.14, 9.62, 
+	13 (ts=827927.572912494, wall=02:32:02.044) -0.09, -0.14, 9.78, 
+	14 (ts=827927.583040035, wall=02:32:02.044) -0.09, -0.06, 9.70, 
+	15 (ts=827927.593168598, wall=02:32:02.065) -0.09, -0.14, 9.70, 
+	16 (ts=827927.603297175, wall=02:32:02.065) -0.01, -0.14, 9.70, 
+	17 (ts=827927.613425852, wall=02:32:02.084) -0.09, -0.14, 9.78, 
+	18 (ts=827927.623554545, wall=02:32:02.084) -0.01, -0.06, 9.70, 
+	19 (ts=827927.633679813, wall=02:32:02.105) -0.09, -0.06, 9.70, 
+	20 (ts=827927.643805084, wall=02:32:02.105) -0.09, -0.06, 9.70, 
+	21 (ts=827927.653936558, wall=02:32:02.125) -0.09, -0.06, 9.70, 
+	22 (ts=827927.664068017, wall=02:32:02.125) -0.01, -0.06, 9.62, 
+	23 (ts=827927.674198126, wall=02:32:02.145) -0.01, -0.06, 9.70, 
+	24 (ts=827927.684328243, wall=02:32:02.145) -0.01, -0.06, 9.62, 
+	25 (ts=827927.694458199, wall=02:32:02.166) -0.09, -0.06, 9.62, 
+	26 (ts=827927.704588162, wall=02:32:02.166) -0.09, -0.06, 9.70, 
+	27 (ts=827927.714714193, wall=02:32:02.186) -0.01, -0.06, 9.70, 
+	28 (ts=827927.724840234, wall=02:32:02.186) -0.09, -0.06, 9.70, 
+	29 (ts=827927.734968730, wall=02:32:02.206) -0.09, -0.14, 9.70, 
+	30 (ts=827927.745097229, wall=02:32:02.206) -0.01, -0.14, 9.70, 
+	31 (ts=827927.755226276, wall=02:32:02.226) -0.09, -0.14, 9.78, 
+	32 (ts=827927.765355315, wall=02:32:02.226) -0.01, -0.14, 9.78, 
+	33 (ts=827927.775484540, wall=02:32:02.246) -0.09, -0.06, 9.70, 
+	34 (ts=827927.785613771, wall=02:32:02.246) -0.09, -0.06, 9.70, 
+	35 (ts=827927.795741496, wall=02:32:02.267) -0.09, -0.06, 9.70, 
+	36 (ts=827927.805869229, wall=02:32:02.267) -0.09, -0.06, 9.62, 
+	37 (ts=827927.816000470, wall=02:32:02.287) -0.09, -0.06, 9.70, 
+	38 (ts=827927.826131699, wall=02:32:02.287) -0.09, -0.14, 9.78, 
+	39 (ts=827927.836262688, wall=02:32:02.307) -0.09, -0.14, 9.78, 
+	40 (ts=827927.846393689, wall=02:32:02.307) -0.09, -0.21, 9.70, 
+	41 (ts=827927.856523535, wall=02:32:02.328) -0.09, -0.21, 9.78, 
+	42 (ts=827927.866653382, wall=02:32:02.328) -0.09, -0.14, 9.70, 
+	43 (ts=827927.876782800, wall=02:32:02.348) -0.09, -0.14, 9.70, 
+	44 (ts=827927.886912223, wall=02:32:02.348) -0.09, -0.14, 9.70, 
+	45 (ts=827927.897039102, wall=02:32:02.369) -0.09, -0.14, 9.70, 
+	46 (ts=827927.907165987, wall=02:32:02.369) -0.09, -0.14, 9.62, 
+	47 (ts=827927.917293527, wall=02:32:02.388) -0.01, -0.14, 9.70, 
+	48 (ts=827927.927421064, wall=02:32:02.388) -0.01, -0.06, 9.70, 
+	49 (ts=827927.937548986, wall=02:32:02.409) -0.09, -0.14, 9.70, 
+	50 (ts=827927.947676911, wall=02:32:02.409) -0.09, -0.14, 9.70, 
+Active sensors:
+ST_LIS3DHTR (handle=0x00000001, connections=1)
+SIGNIFICANT_MOTION (handle=0x00000011, connections=1)
+STEP_DETECTOR_WAKEUP (handle=0x00000065, connections=1)
+Socket Buffer size = 984 events
+WakeLock Status: not held 
+Mode : NORMAL
+3 active connections
+Connection Number: 0 
+	Operating Mode: NORMAL
+	 com.miui.powerkeeper.stepsprovider.StepsService | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0
+	 STEP_DETECTOR_WAKEUP 0x00000065 | status: active | pending flush events 0 
+Connection Number: 1 
+	Operating Mode: NORMAL
+	 hidl_client_pid_605 | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 4500
+	 ST_LIS3DHTR 0x00000001 | status: active | pending flush events 0 
+Connection Number: 2 
+	Operating Mode: NORMAL
+	 cjvy | WakeLockRefCount 0 | uid 10016 | cache size 0 | max cache size 0
+	 SIGNIFICANT_MOTION 0x00000011 | status: active | pending flush events 0 
+0 direct connections
+1 controlled connections
+Stop Connection Number: 0 
+	Operating Mode: NORMAL
+	 com.facebook.ads.redexgen.X.7u | WakeLockRefCount 0 | uid 10167 | cache size 0 | max cache size 0
+controlled apps : 
+	 10102,	 10112,	 10118,	 10120,	 10145,	 10154,	 10156,	 10158,	 10159,	 10161,	 10167,	 10168,	 10193,	 10214,	 10215,	 10220,	 10226,	 10227,	 10228,	 10229,	 10231,	 10232,
+Previous Registrations:
+02:30:22 - 0x00000001 pid= 6550 uid=10167 package=com.facebook.ads.redexgen.X.7u
+02:30:22 + 0x00000001 pid= 6550 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+02:27:39 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:27:39 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:27:27 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:27:26 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:25:07 - 0x00000001 pid= 3762 uid=10167 package=com.facebook.ads.redexgen.X.7u
+02:25:07 + 0x00000001 pid= 3762 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+02:24:18 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:24:18 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:24:06 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:24:06 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:24:05 - 0x00000001 pid=24684 uid=10071 package=plw
+02:24:05 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+02:19:05 - 0x00000001 pid= 2686 uid=10167 package=com.facebook.ads.redexgen.X.7u
+02:19:05 + 0x00000001 pid= 2686 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+02:18:20 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:18:20 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:18:07 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:18:07 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:18:06 - 0x00000001 pid=24684 uid=10071 package=plw
+02:18:06 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+02:15:48 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:15:48 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:15:47 - 0x00000001 pid=24684 uid=10071 package=plw
+02:15:47 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+02:06:22 - 0x00000001 pid=32585 uid=10167 package=com.facebook.ads.redexgen.X.7u
+02:06:22 + 0x00000001 pid=32585 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+02:04:28 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+02:04:28 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+02:04:28 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+02:04:28 - 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+02:04:28 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener
+02:04:28 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:04:23 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:04:21 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:04:21 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:04:20 - 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper
+02:04:20 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener samplingPeriod=20000us batchingPeriod=100000us
+02:04:20 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=20000us batchingPeriod=0us
+02:04:20 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=200000us batchingPeriod=0us
+02:04:20 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=200000us batchingPeriod=0us
+02:04:20 + 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=250000us batchingPeriod=0us
+02:04:20 + 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper samplingPeriod=0us batchingPeriod=0us
+01:56:50 - 0x00000001 pid=29571 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:56:50 + 0x00000001 pid=29571 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:56:23 - 0x00000001 pid=28639 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:56:23 + 0x00000001 pid=28639 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:54:33 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:54:33 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:54:20 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:54:20 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:54:19 - 0x00000001 pid=24684 uid=10071 package=plw
+01:54:18 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:52:01 - 0x00000001 pid=27541 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:52:01 + 0x00000001 pid=27541 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:46:19 - 0x00000001 pid=26874 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:46:19 + 0x00000001 pid=26874 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:46:01 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:46:01 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:45:59 - 0x00000001 pid=24684 uid=10071 package=plw
+01:45:59 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:45:43 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:45:43 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:45:30 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:45:30 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:45:29 - 0x00000001 pid=24684 uid=10071 package=plw
+01:45:29 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:45:13 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:45:12 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:45:12 - 0x00000001 pid=24684 uid=10071 package=plw
+01:45:11 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:41:13 - 0x00000001 pid=25675 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:41:13 + 0x00000001 pid=25675 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:41:10 - 0x00000001 pid=25243 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:41:10 + 0x00000001 pid=25243 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:38:44 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:38:43 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:38:31 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:38:31 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:38:13 - 0x00000001 pid=24054 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:38:13 + 0x00000001 pid=24054 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:37:15 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:37:15 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:37:01 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:37:01 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:36:59 - 0x00000002 pid=20416 uid=10071 package=rrz
+01:36:59 - 0x00000001 pid=20416 uid=10071 package=rrz
+01:36:59 - 0x00000001 pid=20416 uid=10071 package=plw
+01:36:59 + 0x00000001 pid=20416 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:36:59 + 0x00000002 pid=20416 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:36:59 + 0x00000001 pid=20416 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:36:40 - 0x00000001 pid=22801 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:36:40 + 0x00000001 pid=22801 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:35:52 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:52 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:35:49 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+01:35:49 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+01:35:49 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+01:35:49 - 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+01:35:49 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener
+01:35:44 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:43 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:35:42 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:42 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener samplingPeriod=20000us batchingPeriod=100000us
+01:35:42 - 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper
+01:35:41 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:35:41 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=20000us batchingPeriod=0us
+01:35:41 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=200000us batchingPeriod=0us
+01:35:41 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=200000us batchingPeriod=0us
+01:35:41 + 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=250000us batchingPeriod=0us
+01:35:41 + 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper samplingPeriod=0us batchingPeriod=0us
+01:35:38 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:38 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:35:37 - 0x00000002 pid=20416 uid=10071 package=rrz
+01:35:37 - 0x00000001 pid=20416 uid=10071 package=rrz
+01:35:37 - 0x00000001 pid=20416 uid=10071 package=plw
+01:35:36 + 0x00000001 pid=20416 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:35:36 + 0x00000002 pid=20416 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:35:36 + 0x00000001 pid=20416 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:35:07 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:07 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:34:54 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:34:54 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:34:53 - 0x00000002 pid=20416 uid=10071 package=rrz
+01:34:53 - 0x00000001 pid=20416 uid=10071 package=rrz
+01:34:53 - 0x00000001 pid=20416 uid=10071 package=plw
+01:34:53 + 0x00000001 pid=20416 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:34:53 + 0x00000002 pid=20416 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:34:52 + 0x00000001 pid=20416 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:33:00 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:33:00 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:32:56 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:32:56 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:32:56 - 0x00000002 pid=20416 uid=10071 package=rrz
+01:32:56 - 0x00000001 pid=20416 uid=10071 package=rrz
+01:32:55 - 0x00000001 pid=20416 uid=10071 package=plw
+01:32:54 + 0x00000001 pid=20416 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:32:54 + 0x00000002 pid=20416 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:32:54 + 0x00000001 pid=20416 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:32:03 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+01:32:03 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+01:32:03 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+01:32:03 - 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+01:32:03 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener
+01:32:02 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:31:54 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:31:53 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:31:49 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:31:42 - 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener
+01:30:56 + 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:30:49 - 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener
+01:30:45 + 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:30:44 - 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener
+01:30:34 - 0x00000002 pid=18671 uid=10071 package=rrz
+01:30:34 - 0x00000001 pid=18671 uid=10071 package=rrz
+01:30:29 + 0x00000001 pid=18671 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:30:29 + 0x00000002 pid=18671 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:30:28 + 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:29:15 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:29:14 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener samplingPeriod=20000us batchingPeriod=100000us
+01:29:14 - 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper
+01:29:13 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:29:13 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=20000us batchingPeriod=0us
+01:29:13 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=200000us batchingPeriod=0us
+01:29:13 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=200000us batchingPeriod=0us
+01:29:13 + 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=250000us batchingPeriod=0us
+01:29:13 + 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper samplingPeriod=0us batchingPeriod=0us
+01:28:56 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:28:55 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:28:55 - 0x00000002 pid=15692 uid=10071 package=rrz
+01:28:55 - 0x00000001 pid=15692 uid=10071 package=rrz
+01:28:55 - 0x00000001 pid=15692 uid=10071 package=plw
+01:28:54 + 0x00000001 pid=15692 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:28:54 + 0x00000002 pid=15692 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:28:54 + 0x00000001 pid=15692 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:27:56 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:27:56 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:27:55 - 0x00000002 pid=15692 uid=10071 package=rrz
+01:27:55 - 0x00000001 pid=15692 uid=10071 package=rrz
+01:27:55 - 0x00000001 pid=15692 uid=10071 package=plw
+01:27:55 + 0x00000001 pid=15692 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:27:55 + 0x00000002 pid=15692 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:27:55 + 0x00000001 pid=15692 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:27:25 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:27:25 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:27:24 - 0x00000002 pid=15692 uid=10071 package=rrz
+01:27:24 - 0x00000001 pid=15692 uid=10071 package=rrz
+01:27:24 - 0x00000001 pid=15692 uid=10071 package=plw
+01:27:23 + 0x00000001 pid=15692 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:27:23 + 0x00000002 pid=15692 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:27:23 + 0x00000001 pid=15692 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:25:16 - 0x00000002 pid=15692 uid=10071 package=rrz
+01:25:16 - 0x00000001 pid=15692 uid=10071 package=rrz
+01:25:16 - 0x00000001 pid=15692 uid=10071 package=plw
+01:25:16 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:25:14 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:25:13 + 0x00000001 pid=15692 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:25:13 + 0x00000002 pid=15692 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:25:13 + 0x00000001 pid=15692 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+PASS: shell input touchscreen tap 40 40
+PASS: shell dumpsys input
+INPUT MANAGER (dumpsys input)
+
+Input Manager State:
+  Interactive: false
+  System UI Visibility: 0x8
+  Pointer Speed: 0
+  Pointer Gestures Enabled: true
+  Show Touches: false
+  Pointer Capture Enabled: false
+
+Event Hub State:
+  BuiltInKeyboardId: -2
+  Devices:
+    -1: Virtual
+      Classes: 0x40000023
+      Path: <virtual>
+      Enabled: true
+      Descriptor: a718a782d34bc767f4689c232d64d527998ea7fd
+      Location: 
+      ControllerNumber: 0
+      UniqueId: <virtual>
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Virtual.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    1: uinput-fpc
+      Classes: 0x00000001
+      Path: /dev/input/event4
+      Enabled: true
+      Descriptor: 0a2365ce4f51162539f3bf91469900de3a450172
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0006, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/uinput-fpc.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    2: ACCDET
+      Classes: 0x00000081
+      Path: /dev/input/event0
+      Enabled: true
+      Descriptor: 1c78f7e0d16d4dbc8d3ab93943523f379203f90b
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0019, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/ACCDET.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    3: fpc_irq@fingerprint
+      Classes: 0x00000001
+      Path: /dev/input/event3
+      Enabled: true
+      Descriptor: dad8bc819b573998ec22ca3952b1006fc1aa1a82
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    4: mtk-tpd
+      Classes: 0x00000015
+      Path: /dev/input/event2
+      Enabled: true
+      Descriptor: 84931e976ab60191371c1c95baf408538ca4c4c5
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+    5: mtk-kpd
+      Classes: 0x00000001
+      Path: /dev/input/event1
+      Enabled: true
+      Descriptor: f0d2e427e7a05eb6d316f5e14800c5ac7b6aee79
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0019, vendor=0x2454, product=0x6500, version=0x0010
+      KeyLayoutFile: /system/usr/keylayout/mtk-kpd.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+
+Input Reader State:
+  Device -1: Virtual
+    Generation: 2
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00000301
+    KeyboardType: 2
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 2
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 1: uinput-fpc
+    Generation: 12
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00000101
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 491524951503000
+  Device 2: ACCDET
+    Generation: 10
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x80000101
+    KeyboardType: 1
+    Switch Input Mapper:
+      SwitchValues: 0
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 3: fpc_irq@fingerprint
+    Generation: 8
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00000101
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 4: mtk-tpd
+    Generation: 22
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00001103
+    KeyboardType: 1
+    Motion Ranges:
+      X: source=0x00001002, min=0.000, max=719.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=0x00001002, min=0.000, max=1439.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=0x00001002, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      SIZE: source=0x00001002, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      TOUCH_MAJOR: source=0x00001002, min=0.000, max=1609.969, flat=0.000, fuzz=0.000, resolution=0.000
+      TOUCH_MINOR: source=0x00001002, min=0.000, max=1609.969, flat=0.000, fuzz=0.000, resolution=0.000
+      TOOL_MAJOR: source=0x00001002, min=0.000, max=1609.969, flat=0.000, fuzz=0.000, resolution=0.000
+      TOOL_MINOR: source=0x00001002, min=0.000, max=1609.969, flat=0.000, fuzz=0.000, resolution=0.000
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+    Touch Input Mapper (mode - direct):
+      Parameters:
+        GestureMode: multi-touch
+        DeviceType: touchScreen
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId=''
+        OrientationAware: true
+      Raw Touch Axes:
+        X: min=0, max=720, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=1440, flat=0, fuzz=0, resolution=0
+        Pressure: unknown range
+        TouchMajor: min=0, max=100, flat=0, fuzz=0, resolution=0
+        TouchMinor: min=0, max=100, flat=0, fuzz=0, resolution=0
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: min=0, max=10, flat=0, fuzz=0, resolution=0
+        Slot: min=0, max=9, flat=0, fuzz=0, resolution=0
+      Calibration:
+        touch.size.calibration: geometric
+        touch.pressure.calibration: none
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport: displayId=0, orientation=0, logicalFrame=[0, 0, 720, 1440], physicalFrame=[0, 0, 720, 1440], deviceSize=[720, 1440]
+      SurfaceWidth: 720px
+      SurfaceHeight: 1440px
+      SurfaceLeft: 0
+      SurfaceTop: 0
+      SurfaceOrientation: 0
+      Translation and Scaling Factors:
+        XTranslate: 0.000
+        YTranslate: 0.000
+        XScale: 0.999
+        YScale: 0.999
+        XPrecision: 1.001
+        YPrecision: 1.001
+        GeometricScale: 0.999
+        PressureScale: 0.000
+        SizeScale: 0.010
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=0
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=0
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Device 5: mtk-kpd
+    Generation: 4
+    IsExternal: false
+    HasMic:     false
+    Sources: 0x00000101
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: false
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 491530291438000
+  Configuration:
+    ExcludedDeviceNames: []
+    VirtualKeyQuietTime: 100.0ms
+    PointerVelocityControlParameters: scale=1.000, lowThreshold=500.000, highThreshold=3000.000, acceleration=3.000
+    WheelVelocityControlParameters: scale=1.000, lowThreshold=15.000, highThreshold=50.000, acceleration=4.000
+    PointerGesture:
+      Enabled: true
+      QuietInterval: 100.0ms
+      DragMinSwitchSpeed: 50.0px/s
+      TapInterval: 150.0ms
+      TapDragInterval: 300.0ms
+      TapSlop: 20.0px
+      MultitouchSettleInterval: 100.0ms
+      MultitouchMinDistance: 15.0px
+      SwipeTransitionAngleCosine: 0.3
+      SwipeMaxWidthRatio: 0.2
+      MovementSpeedRatio: 0.8
+      ZoomSpeedRatio: 0.3
+      Viewports:
+        ViewportInternal:
+          Viewport: displayId=0, orientation=0, uniqueId='', logicalFrame=[0, 0, 720, 1440], physicalFrame=[0, 0, 720, 1440], deviceSize=[720, 1440]
+        ViewportExternal:
+          Viewport: displayId=0, orientation=0, uniqueId='', logicalFrame=[0, 0, 720, 1440], physicalFrame=[0, 0, 720, 1440], deviceSize=[720, 1440]
+        ViewportVirtual:
+
+Input Dispatcher State:
+  DispatchEnabled: 1
+  DispatchFrozen: 0
+  FocusedApplication: name='AppWindowToken{cbd69ae token=Token{4aa73b0 ActivityRecord{70fa02d u0 com.android.camera/.Camera t6200}}}', dispatchingTimeout=8000.000ms
+  FocusedWindow: name='Window{3e6268d u0 StatusBar}'
+  TouchStates: <no displays touched>
+  Windows:
+    0: name='Window{d63af94 u0 InputMethod}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x81800108, type=0x000007db, layer=0, frame=[0,48][720,1440], scale=1.000000, touchableRegion=[0,934][720,1440], inputFeatures=0x00000000, ownerPid=20091, ownerUid=10172, dispatchingTimeout=8000.000ms
+    1: name='Window{735707d u0 RoundCorner}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=true, canReceiveKeys=false, flags=0x01000518, type=0x000007df, layer=0, frame=[0,1400][720,1440], scale=1.000000, touchableRegion=[0,1400][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    2: name='Window{ad7531a u0 RoundCorner}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=true, canReceiveKeys=false, flags=0x01000518, type=0x000007df, layer=0, frame=[0,0][720,40], scale=1.000000, touchableRegion=[0,0][720,40], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    3: name='Window{12e8a1d u0 GestureStubRight}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x01000128, type=0x000007eb, layer=0, frame=[690,550][720,1414], scale=1.000000, touchableRegion=[690,550][720,1414], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    4: name='Window{e213283 u0 GestureStubLeft}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x01000128, type=0x000007eb, layer=0, frame=[0,550][30,1414], scale=1.000000, touchableRegion=[0,550][30,1414], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    5: name='Window{b8666a4 u0 GestureStub}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x00000128, type=0x000007eb, layer=0, frame=[0,1414][720,1440], scale=1.000000, touchableRegion=[0,1414][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    6: name='Window{705f8e3 u0 rapid_charge}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=true, canReceiveKeys=false, flags=0x05010508, type=0x000007d9, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    7: name='Window{3e6268d u0 StatusBar}', displayId=0, paused=false, hasFocus=true, hasWallpaper=false, visible=true, canReceiveKeys=true, flags=0x81860040, type=0x000007d0, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000004, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    8: name='Window{da20107 u0 Aspect}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x01000128, type=0x000007d3, layer=0, frame=[360,1440][360,1440], scale=1.000000, touchableRegion=<empty>, inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    9: name='Window{a60d93f u0 AssistPreviewPanel}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x01000118, type=0x000007f1, layer=0, frame=[0,1440][720,1440], scale=1.000000, touchableRegion=<empty>, inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    10: name='Window{e4e517e u0 DockedStackDivider}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x21840028, type=0x000007f2, layer=0, frame=[0,0][0,0], scale=1.000000, touchableRegion=[-96,0][96,96], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    11: name='Window{733d51e u0 com.android.camera/com.android.camera.Camera}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x85810520, type=0x00000001, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=20363, ownerUid=10022, dispatchingTimeout=8000.000ms
+    12: name='Window{2768ed5 u0 com.miui.home/com.miui.home.launcher.Launcher}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x81850118, type=0x00000004, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=5472, ownerUid=1000, dispatchingTimeout=8000.000ms
+    13: name='Window{28fa0b3 u0 com.miui.home/com.miui.home.launcher.Launcher}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x85910120, type=0x00000001, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=20271, ownerUid=10029, dispatchingTimeout=8000.000ms
+    14: name='Window{8ad6137 u0 com.android.systemui/com.android.systemui.recents.RecentsActivity}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x81910124, type=0x00000001, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+    15: name='Window{2431032 u0 com.android.systemui.ImageWallpaper}', displayId=0, paused=false, hasFocus=false, hasWallpaper=false, visible=false, canReceiveKeys=false, flags=0x00010318, type=0x000007dd, layer=0, frame=[0,0][720,1440], scale=1.000000, touchableRegion=[0,0][720,1440], inputFeatures=0x00000000, ownerPid=1280, ownerUid=1000, dispatchingTimeout=8000.000ms
+  MonitoringChannels:
+    0: 'WindowManager (server)'
+  RecentQueue: length=10
+    MotionEvent, age=279635.4ms
+    MotionEvent, age=279635.4ms
+    MotionEvent, age=231394.4ms
+    MotionEvent, age=231394.4ms
+    MotionEvent, age=103932.4ms
+    MotionEvent, age=103932.4ms
+    MotionEvent, age=69876.4ms
+    MotionEvent, age=69876.4ms
+    MotionEvent, age=140.4ms
+    MotionEvent, age=140.4ms
+  PendingEvent: <none>
+  InboundQueue: <empty>
+  ReplacedKeys: <empty>
+  Connections:
+    0: channelName='WindowManager (server)', windowName='monitor', status=NORMAL, monitor=true, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    1: channelName='da20107 Aspect (server)', windowName='Window{da20107 u0 Aspect}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    2: channelName='e213283 GestureStubBottom (server)', windowName='Window{e213283 u0 GestureStubLeft}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    3: channelName='12e8a1d GestureStubBottom (server)', windowName='Window{12e8a1d u0 GestureStubRight}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    4: channelName='8ad6137 com.android.systemui/com.android.systemui.recents.RecentsActivity (server)', windowName='Window{8ad6137 u0 com.android.systemui/com.android.systemui.recents.RecentsActivity}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    5: channelName='28fa0b3 com.miui.home/com.miui.home.launcher.Launcher (server)', windowName='Window{28fa0b3 u0 com.miui.home/com.miui.home.launcher.Launcher}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    6: channelName='2431032 com.android.systemui.ImageWallpaper (server)', windowName='Window{2431032 u0 com.android.systemui.ImageWallpaper}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    7: channelName='2768ed5 com.miui.home/com.miui.home.launcher.Launcher (server)', windowName='Window{2768ed5 u0 com.miui.home/com.miui.home.launcher.Launcher}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    8: channelName='d63af94 InputMethod (server)', windowName='Window{d63af94 u0 InputMethod}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    9: channelName='733d51e com.android.camera/com.android.camera.Camera (server)', windowName='Window{733d51e u0 com.android.camera/com.android.camera.Camera}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    10: channelName='e4e517e DockedStackDivider (server)', windowName='Window{e4e517e u0 DockedStackDivider}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    11: channelName='ad7531a RoundCorner (server)', windowName='Window{ad7531a u0 RoundCorner}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    12: channelName='a60d93f AssistPreviewPanel (server)', windowName='Window{a60d93f u0 AssistPreviewPanel}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    13: channelName='b8666a4 GestureStub (server)', windowName='Window{b8666a4 u0 GestureStub}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    14: channelName='705f8e3 rapid_charge (server)', windowName='Window{705f8e3 u0 rapid_charge}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    15: channelName='3e6268d StatusBar (server)', windowName='Window{3e6268d u0 StatusBar}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    16: channelName='735707d RoundCorner (server)', windowName='Window{735707d u0 RoundCorner}', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    17: channelName='pip_input_consumer (server)', windowName='?', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+  AppSwitch: not pending
+  Configuration:
+    KeyRepeatDelay: 50.0ms
+    KeyRepeatTimeout: 500.0ms
+
+
+PASS: shell dumpsys sensorservice
+Sensor Device:
+Total 11 h/w sensors, 11 running:
+0x00000001) active-count = 1; sampling_period(ms) = {10.0}, selected = 10.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+0x00000011) active-count = 1; sampling_period(ms) = {1.0}, selected = 1.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+0x00000065) active-count = 1; sampling_period(ms) = {200.0}, selected = 200.00 ms; batching_period(ms) = {300000.0}, selected = 300000.00 ms
+Sensor List:
+0x00000001) ST_LIS3DHTR               | lis3dh          | ver: 1 | type: android.sensor.accelerometer(1) | perm: n/a | flags: 0x00000000
+	continuous | minRate=50.00Hz | maxRate=200.00Hz | FIFO (max,reserved) = (4500, 3000) events | non-wakeUp | 
+0x00000002) AK09918C                  | akl             | ver: 1 | type: android.sensor.magnetic_field(2) | perm: n/a | flags: 0x00000000
+	continuous | minRate=5.00Hz | maxRate=50.00Hz | FIFO (max,reserved) = (4500, 600) events | non-wakeUp | 
+0x00000003) ORIENTATION               | MTK             | ver: 1 | type: android.sensor.orientation(3) | perm: n/a | flags: 0x00000000
+	continuous | minRate=50.00Hz | maxRate=200.00Hz | no batching | non-wakeUp | 
+0x00000005) STK3321                   | stk3321_l       | ver: 1 | type: android.sensor.light(5) | perm: n/a | flags: 0x00000002
+	on-change | minRate=1.00Hz | minDelay=0us | no batching | non-wakeUp | 
+0x00000008) STK3321                   | stk3321_p       | ver: 1 | type: android.sensor.proximity(8) | perm: n/a | flags: 0x00000003
+	on-change | minRate=1.00Hz | minDelay=0us | FIFO (max,reserved) = (4500, 100) events | wakeUp | 
+0x00000009) GRAVITY                   | MTK             | ver: 1 | type: android.sensor.gravity(9) | perm: n/a | flags: 0x00000000
+	continuous | minRate=50.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | 
+0x00000011) SIGNIFICANT_MOTION        | MTK             | ver: 1 | type: android.sensor.significant_motion(17) | perm: n/a | flags: 0x00000005
+	one-shot | maxDelay=0us | minDelay=-1us | no batching | wakeUp | 
+0x00000012) STEP_DETECTOR             | MTK             | ver: 1 | type: android.sensor.step_detector(18) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (4500, 100) events | non-wakeUp | 
+0x00000013) STEP_COUNTER              | MTK             | ver: 1 | type: android.sensor.step_counter(19) | perm: n/a | flags: 0x00000002
+	on-change | minRate=1.00Hz | minDelay=0us | no batching | non-wakeUp | 
+0x00000016) TILT_DETECTOR             | MTK             | ver: 1 | type: android.sensor.tilt_detector(22) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | no batching | wakeUp | 
+0x00000065) STEP_DETECTOR_WAKEUP      | MTK             | ver: 1 | type: android.sensor.step_detector(18) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (4500, 100) events | wakeUp | 
+0x5f67656f) GeoMag Rotation Vector Sensor | AOSP            | ver: 3 | type: android.sensor.geomagnetic_rotation_vector(20) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=200.00Hz | no batching | non-wakeUp | 
+Fusion States:
+9-axis fusion disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+game fusion(no mag) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+geomag fusion (no gyro) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+Recent Sensor events:
+TILT_DETECTOR: last 10 events
+	 1 (ts=457758.332191377, wall=19:42:32.793) 1.00, 
+	 2 (ts=457994.645621852, wall=19:46:29.105) 1.00, 
+	 3 (ts=458195.695790787, wall=19:49:50.156) 1.00, 
+	 4 (ts=458340.737583257, wall=19:52:15.197) 1.00, 
+	 5 (ts=458596.740776119, wall=19:56:31.200) 1.00, 
+	 6 (ts=709329.027355388, wall=17:35:23.488) 0.00, 
+	 7 (ts=709555.744249436, wall=17:39:10.204) 1.00, 
+	 8 (ts=709899.694206493, wall=17:44:54.170) 0.00, 
+	 9 (ts=709931.073235567, wall=17:45:25.533) 1.00, 
+	10 (ts=710005.818419181, wall=17:46:40.279) 0.00, 
+SIGNIFICANT_MOTION: last 50 events
+	 1 (ts=370432.726422307, wall=19:27:07.188) 1.00, 
+	 2 (ts=376033.521352697, wall=21:00:27.982) 1.00, 
+	 3 (ts=378309.178380172, wall=21:38:23.640) 1.00, 
+	 4 (ts=379709.755548307, wall=22:01:44.217) 1.00, 
+	 5 (ts=381757.652594321, wall=22:35:52.114) 1.00, 
+	 6 (ts=385010.981661381, wall=23:30:05.444) 1.00, 
+	 7 (ts=386778.294121378, wall=23:59:32.756) 1.00, 
+	 8 (ts=388647.123399304, wall=00:30:41.585) 1.00, 
+	 9 (ts=390938.409069956, wall=01:08:52.872) 1.00, 
+	10 (ts=433714.315340902, wall=13:01:48.777) 1.00, 
+	11 (ts=438987.855451926, wall=14:29:42.317) 1.00, 
+	12 (ts=445303.020823374, wall=16:14:57.482) 1.00, 
+	13 (ts=447812.253962476, wall=16:56:46.716) 1.00, 
+	14 (ts=456290.303427056, wall=19:18:04.765) 1.00, 
+	15 (ts=457058.127970244, wall=19:30:52.590) 1.00, 
+	16 (ts=457658.814855223, wall=19:40:53.276) 1.00, 
+	17 (ts=461191.763716007, wall=20:39:46.226) 1.00, 
+	18 (ts=464887.128565387, wall=21:41:21.592) 1.00, 
+	19 (ts=480653.414818802, wall=02:04:07.878) 1.00, 
+	20 (ts=514180.933137265, wall=11:22:55.395) 1.00, 
+	21 (ts=522219.232968590, wall=13:36:53.695) 1.00, 
+	22 (ts=523290.081141187, wall=13:54:44.543) 1.00, 
+	23 (ts=523569.297223050, wall=13:59:23.759) 1.00, 
+	24 (ts=527009.874181304, wall=14:56:44.336) 1.00, 
+	25 (ts=538690.518356185, wall=18:11:24.980) 1.00, 
+	26 (ts=542067.242203143, wall=19:07:41.704) 1.00, 
+	27 (ts=543460.247301448, wall=19:30:54.709) 1.00, 
+	28 (ts=547566.660582896, wall=20:39:21.123) 1.00, 
+	29 (ts=552477.710317684, wall=22:01:12.172) 1.00, 
+	30 (ts=563825.825296526, wall=01:10:20.286) 1.00, 
+	31 (ts=563860.621408758, wall=01:10:55.082) 1.00, 
+	32 (ts=599731.094932469, wall=11:08:45.557) 1.00, 
+	33 (ts=606005.274034997, wall=12:53:19.735) 1.00, 
+	34 (ts=608871.294081159, wall=13:41:05.756) 1.00, 
+	35 (ts=610122.777362602, wall=14:01:57.240) 1.00, 
+	36 (ts=624675.603997433, wall=18:04:30.065) 1.00, 
+	37 (ts=625293.489228152, wall=18:14:47.951) 1.00, 
+	38 (ts=629220.034892588, wall=19:20:14.497) 1.00, 
+	39 (ts=644879.292840203, wall=23:41:13.754) 1.00, 
+	40 (ts=683696.739743917, wall=10:28:11.201) 1.00, 
+	41 (ts=685048.885540152, wall=10:50:43.348) 1.00, 
+	42 (ts=708125.757465194, wall=17:15:20.233) 1.00, 
+	43 (ts=717277.313654804, wall=19:47:51.775) 1.00, 
+	44 (ts=739550.049626386, wall=01:59:04.510) 1.00, 
+	45 (ts=768263.418810575, wall=09:57:37.880) 1.00, 
+	46 (ts=773184.290465062, wall=11:19:38.752) 1.00, 
+	47 (ts=774197.271456117, wall=11:36:31.733) 1.00, 
+	48 (ts=777677.994107983, wall=12:34:32.456) 1.00, 
+	49 (ts=777781.305352912, wall=12:36:15.767) 1.00, 
+	50 (ts=780330.399951578, wall=13:18:44.860) 1.00, 
+STEP_DETECTOR_WAKEUP: last 10 events
+	 1 (ts=780628.127749519, wall=13:23:42.588) 1.00, 
+	 2 (ts=780628.127750827, wall=13:23:42.588) 1.00, 
+	 3 (ts=780628.127752135, wall=13:23:42.588) 1.00, 
+	 4 (ts=780628.127753519, wall=13:23:42.588) 1.00, 
+	 5 (ts=780628.127754827, wall=13:23:42.588) 1.00, 
+	 6 (ts=780628.127756212, wall=13:23:42.588) 1.00, 
+	 7 (ts=780628.127757519, wall=13:23:42.588) 1.00, 
+	 8 (ts=780628.127758827, wall=13:23:42.588) 1.00, 
+	 9 (ts=780628.131546212, wall=13:23:42.591) 1.00, 
+	10 (ts=780628.131547981, wall=13:23:42.591) 1.00, 
+GRAVITY: last 10 events
+	 1 (ts=709575.338035453, wall=17:39:29.800) 0.01, 0.91, 9.76, 
+	 2 (ts=709575.348165304, wall=17:39:29.820) -0.20, 0.94, 9.76, 
+	 3 (ts=709575.358295151, wall=17:39:29.820) -0.20, 0.94, 9.76, 
+	 4 (ts=709575.368416737, wall=17:39:29.840) -0.42, 0.97, 9.75, 
+	 5 (ts=709575.378538318, wall=17:39:29.840) -0.42, 0.97, 9.75, 
+	 6 (ts=709575.388662504, wall=17:39:29.860) -0.64, 1.00, 9.73, 
+	 7 (ts=709575.398786655, wall=17:39:29.860) -0.64, 1.00, 9.73, 
+	 8 (ts=709575.408786670, wall=17:39:29.871) -0.64, 1.00, 9.73, 
+	 9 (ts=709575.418968964, wall=17:39:29.891) -0.83, 1.04, 9.72, 
+	10 (ts=709575.429150929, wall=17:39:29.891) -0.83, 1.04, 9.72, 
+STK3321: last 50 events
+	 1 (ts=824308.770421953, wall=01:31:43.230) 23.00, 0.00, 0.00, 
+	 2 (ts=824309.755456338, wall=01:31:44.215) 26.00, 0.00, 0.00, 
+	 3 (ts=824310.155465568, wall=01:31:44.615) 23.00, 0.00, 0.00, 
+	 4 (ts=824310.355435415, wall=01:31:44.815) 26.00, 0.00, 0.00, 
+	 5 (ts=824314.955439492, wall=01:31:49.415) 23.00, 0.00, 0.00, 
+	 6 (ts=824322.955504646, wall=01:31:57.415) 20.00, 0.00, 0.00, 
+	 7 (ts=824323.155466723, wall=01:31:57.615) 23.00, 0.00, 0.00, 
+	 8 (ts=824324.770430262, wall=01:31:59.230) 20.00, 0.00, 0.00, 
+	 9 (ts=824325.155437339, wall=01:31:59.615) 23.00, 0.00, 0.00, 
+	10 (ts=824325.555385569, wall=01:32:00.015) 20.00, 0.00, 0.00, 
+	11 (ts=824325.755454031, wall=01:32:00.215) 23.00, 0.00, 0.00, 
+	12 (ts=824326.355460954, wall=01:32:00.815) 29.00, 0.00, 0.00, 
+	13 (ts=824326.555426877, wall=01:32:01.015) 26.00, 0.00, 0.00, 
+	14 (ts=824327.555447339, wall=01:32:02.015) 62.00, 0.00, 0.00, 
+	15 (ts=824327.756324569, wall=01:32:02.216) 83.00, 0.00, 0.00, 
+	16 (ts=824327.955457108, wall=01:32:02.415) 94.00, 0.00, 0.00, 
+	17 (ts=824328.155815569, wall=01:32:02.615) 89.00, 0.00, 0.00, 
+	18 (ts=824328.355804339, wall=01:32:02.815) 77.00, 0.00, 0.00, 
+	19 (ts=824328.555422646, wall=01:32:03.015) 62.00, 0.00, 0.00, 
+	20 (ts=824547.531314429, wall=01:35:41.991) 20.00, 0.00, 0.00, 
+	21 (ts=824548.116426813, wall=01:35:42.576) 17.00, 0.00, 0.00, 
+	22 (ts=824548.715872429, wall=01:35:43.175) 14.00, 0.00, 0.00, 
+	23 (ts=824548.916436890, wall=01:35:43.376) 17.00, 0.00, 0.00, 
+	24 (ts=824549.116450890, wall=01:35:43.576) 14.00, 0.00, 0.00, 
+	25 (ts=824549.716434583, wall=01:35:44.176) 17.00, 0.00, 0.00, 
+	26 (ts=824550.116469967, wall=01:35:44.576) 20.00, 0.00, 0.00, 
+	27 (ts=824550.316517813, wall=01:35:44.776) 17.00, 0.00, 0.00, 
+	28 (ts=824550.716418275, wall=01:35:45.176) 14.00, 0.00, 0.00, 
+	29 (ts=824550.916495814, wall=01:35:45.376) 17.00, 0.00, 0.00, 
+	30 (ts=824551.916416814, wall=01:35:46.376) 20.00, 0.00, 0.00, 
+	31 (ts=824552.715993352, wall=01:35:47.175) 17.00, 0.00, 0.00, 
+	32 (ts=824554.316449352, wall=01:35:48.776) 20.00, 0.00, 0.00, 
+	33 (ts=824554.516343121, wall=01:35:48.976) 26.00, 0.00, 0.00, 
+	34 (ts=824554.716445660, wall=01:35:49.176) 37.00, 0.00, 0.00, 
+	35 (ts=824554.916188583, wall=01:35:49.376) 77.00, 0.00, 0.00, 
+	36 (ts=824555.116387352, wall=01:35:49.576) 83.00, 0.00, 0.00, 
+	37 (ts=824555.316424968, wall=01:35:49.776) 80.00, 0.00, 0.00, 
+	38 (ts=826266.016045070, wall=02:04:20.475) 62.00, 0.00, 0.00, 
+	39 (ts=826266.201155377, wall=02:04:20.661) 46.00, 0.00, 0.00, 
+	40 (ts=826266.401137685, wall=02:04:20.860) 26.00, 0.00, 0.00, 
+	41 (ts=826266.601230685, wall=02:04:21.061) 20.00, 0.00, 0.00, 
+	42 (ts=826269.201297454, wall=02:04:23.661) 17.00, 0.00, 0.00, 
+	43 (ts=826269.401615993, wall=02:04:23.861) 20.00, 0.00, 0.00, 
+	44 (ts=826270.016454685, wall=02:04:24.476) 23.00, 0.00, 0.00, 
+	45 (ts=826270.401123993, wall=02:04:24.860) 26.00, 0.00, 0.00, 
+	46 (ts=826271.001149762, wall=02:04:25.460) 23.00, 0.00, 0.00, 
+	47 (ts=826273.001096378, wall=02:04:27.460) 20.00, 0.00, 0.00, 
+	48 (ts=826273.201181916, wall=02:04:27.661) 23.00, 0.00, 0.00, 
+	49 (ts=826273.401153993, wall=02:04:27.861) 46.00, 0.00, 0.00, 
+	50 (ts=826273.601235916, wall=02:04:28.061) 59.00, 0.00, 0.00, 
+STK3321: last 10 events
+	 1 (ts=824547.599752583, wall=01:35:42.060) 5.00, 0.00, 0.00, 
+	 2 (ts=824550.677934198, wall=01:35:45.137) 0.00, 0.00, 0.00, 
+	 3 (ts=824550.725738198, wall=01:35:45.185) 5.00, 0.00, 0.00, 
+	 4 (ts=826265.793636147, wall=02:04:20.258) 5.00, 0.00, 0.00, 
+	 5 (ts=826265.793796762, wall=02:04:20.258) 5.00, 0.00, 0.00, 
+	 6 (ts=826266.137160454, wall=02:04:20.597) 5.00, 0.00, 0.00, 
+	 7 (ts=826268.590271454, wall=02:04:23.050) 0.00, 0.00, 0.00, 
+	 8 (ts=826268.733602993, wall=02:04:23.193) 5.00, 0.00, 0.00, 
+	 9 (ts=826269.210991608, wall=02:04:23.670) 0.00, 0.00, 0.00, 
+	10 (ts=826269.401627224, wall=02:04:23.861) 5.00, 0.00, 0.00, 
+ORIENTATION: last 10 events
+	 1 (ts=338427.119866911, wall=10:33:41.591) 290.88, -45.84, -1.38, 
+	 2 (ts=338427.129992602, wall=10:33:41.591) 290.88, -45.84, -1.38, 
+	 3 (ts=338427.140120564, wall=10:33:41.612) 290.86, -45.16, -1.84, 
+	 4 (ts=338427.150248525, wall=10:33:41.612) 290.86, -45.16, -1.84, 
+	 5 (ts=338427.160374134, wall=10:33:41.632) 290.84, -46.19, -1.38, 
+	 6 (ts=338427.170499713, wall=10:33:41.632) 290.84, -46.19, -1.38, 
+	 7 (ts=338427.180624760, wall=10:33:41.652) 290.86, -47.62, -1.02, 
+	 8 (ts=338427.190749761, wall=10:33:41.652) 290.86, -47.62, -1.02, 
+	 9 (ts=338427.200878349, wall=10:33:41.673) 291.05, -50.75, -0.53, 
+	10 (ts=338427.211006962, wall=10:33:41.673) 291.05, -50.75, -0.53, 
+AK09918C: last 10 events
+	 1 (ts=824625.201556978, wall=01:36:59.682) 65.52, -32.76, -28.68, 
+	 2 (ts=824625.221561247, wall=01:36:59.682) 65.82, -32.28, -29.04, 
+	 3 (ts=824625.241565500, wall=01:36:59.762) 65.28, -32.28, -29.40, 
+	 4 (ts=824625.261562153, wall=01:36:59.762) 65.16, -32.46, -29.82, 
+	 5 (ts=824625.281566442, wall=01:36:59.762) 64.98, -32.16, -29.70, 
+	 6 (ts=824625.301563097, wall=01:36:59.762) 64.44, -32.82, -29.34, 
+	 7 (ts=824625.321559749, wall=01:36:59.842) 64.86, -32.76, -29.46, 
+	 8 (ts=824625.341564038, wall=01:36:59.842) 65.22, -32.46, -29.52, 
+	 9 (ts=824625.361560691, wall=01:36:59.842) 65.10, -32.34, -29.46, 
+	10 (ts=824625.381557364, wall=01:36:59.842) 65.58, -32.16, -29.28, 
+ST_LIS3DHTR: last 50 events
+	 1 (ts=827997.199602110, wall=02:33:11.671) -0.01, -0.06, 9.78, 
+	 2 (ts=827997.209734877, wall=02:33:11.671) -0.01, -0.06, 9.70, 
+	 3 (ts=827997.219867569, wall=02:33:11.691) -0.09, -0.06, 9.62, 
+	 4 (ts=827997.230000262, wall=02:33:11.691) -0.17, -0.06, 9.70, 
+	 5 (ts=827997.240132746, wall=02:33:11.711) -0.09, -0.14, 9.70, 
+	 6 (ts=827997.250265247, wall=02:33:11.711) -0.09, -0.06, 9.70, 
+	 7 (ts=827997.260392932, wall=02:33:11.732) -0.09, -0.06, 9.70, 
+	 8 (ts=827997.270520627, wall=02:33:11.732) -0.01, -0.06, 9.70, 
+	 9 (ts=827997.280652667, wall=02:33:11.752) -0.09, -0.06, 9.78, 
+	10 (ts=827997.290784704, wall=02:33:11.752) -0.09, -0.14, 9.78, 
+	11 (ts=827997.300914123, wall=02:33:11.772) -0.09, -0.06, 9.70, 
+	12 (ts=827997.311043550, wall=02:33:11.772) -0.09, -0.06, 9.78, 
+	13 (ts=827997.321174811, wall=02:33:11.792) -0.09, -0.06, 9.70, 
+	14 (ts=827997.331306080, wall=02:33:11.792) -0.09, -0.14, 9.70, 
+	15 (ts=827997.341438036, wall=02:33:11.812) -0.01, -0.14, 9.70, 
+	16 (ts=827997.351569997, wall=02:33:11.812) -0.01, -0.06, 9.70, 
+	17 (ts=827997.361699591, wall=02:33:11.833) -0.09, -0.06, 9.70, 
+	18 (ts=827997.371829208, wall=02:33:11.833) -0.09, -0.14, 9.70, 
+	19 (ts=827997.381960593, wall=02:33:11.853) -0.01, -0.06, 9.70, 
+	20 (ts=827997.392091978, wall=02:33:11.853) -0.01, -0.14, 9.62, 
+	21 (ts=827997.402224439, wall=02:33:11.873) -0.01, -0.14, 9.70, 
+	22 (ts=827997.412356900, wall=02:33:11.873) -0.01, -0.06, 9.70, 
+	23 (ts=827997.422487096, wall=02:33:11.894) -0.01, -0.14, 9.70, 
+	24 (ts=827997.432617291, wall=02:33:11.894) -0.01, -0.14, 9.70, 
+	25 (ts=827997.442749180, wall=02:33:11.914) -0.01, -0.06, 9.70, 
+	26 (ts=827997.452881065, wall=02:33:11.914) -0.09, -0.14, 9.78, 
+	27 (ts=827997.463012389, wall=02:33:11.934) -0.01, -0.14, 9.78, 
+	28 (ts=827997.473143736, wall=02:33:11.934) -0.01, -0.06, 9.78, 
+	29 (ts=827997.483274766, wall=02:33:11.954) -0.01, -0.14, 9.78, 
+	30 (ts=827997.493405805, wall=02:33:11.954) -0.01, -0.06, 9.78, 
+	31 (ts=827997.503538156, wall=02:33:11.975) -0.09, -0.06, 9.70, 
+	32 (ts=827997.513670503, wall=02:33:11.975) -0.01, -0.14, 9.70, 
+	33 (ts=827997.523800422, wall=02:33:11.995) -0.01, -0.14, 9.70, 
+	34 (ts=827997.533930347, wall=02:33:11.995) -0.09, -0.14, 9.70, 
+	35 (ts=827997.544060002, wall=02:33:12.015) -0.09, -0.06, 9.70, 
+	36 (ts=827997.554189655, wall=02:33:12.015) -0.17, -0.06, 9.70, 
+	37 (ts=827997.564321012, wall=02:33:12.036) -0.09, -0.06, 9.70, 
+	38 (ts=827997.574452357, wall=02:33:12.036) -0.09, -0.06, 9.70, 
+	39 (ts=827997.584585121, wall=02:33:12.056) -0.01, -0.06, 9.70, 
+	40 (ts=827997.594717890, wall=02:33:12.056) -0.09, -0.14, 9.78, 
+	41 (ts=827997.604846955, wall=02:33:12.076) -0.17, -0.14, 9.78, 
+	42 (ts=827997.614976034, wall=02:33:12.076) -0.09, -0.14, 9.78, 
+	43 (ts=827997.625107239, wall=02:33:12.096) -0.09, -0.14, 9.70, 
+	44 (ts=827997.635238430, wall=02:33:12.096) -0.09, -0.06, 9.78, 
+	45 (ts=827997.645368110, wall=02:33:12.116) -0.01, -0.06, 9.70, 
+	46 (ts=827997.655497805, wall=02:33:12.116) -0.09, -0.14, 9.70, 
+	47 (ts=827997.665628612, wall=02:33:12.137) -0.09, -0.06, 9.62, 
+	48 (ts=827997.675759419, wall=02:33:12.137) -0.09, -0.06, 9.70, 
+	49 (ts=827997.685888860, wall=02:33:12.157) -0.09, -0.14, 9.70, 
+	50 (ts=827997.696018285, wall=02:33:12.157) -0.09, -0.14, 9.70, 
+Active sensors:
+ST_LIS3DHTR (handle=0x00000001, connections=1)
+SIGNIFICANT_MOTION (handle=0x00000011, connections=1)
+STEP_DETECTOR_WAKEUP (handle=0x00000065, connections=1)
+Socket Buffer size = 984 events
+WakeLock Status: not held 
+Mode : NORMAL
+3 active connections
+Connection Number: 0 
+	Operating Mode: NORMAL
+	 com.miui.powerkeeper.stepsprovider.StepsService | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0
+	 STEP_DETECTOR_WAKEUP 0x00000065 | status: active | pending flush events 0 
+Connection Number: 1 
+	Operating Mode: NORMAL
+	 hidl_client_pid_605 | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 4500
+	 ST_LIS3DHTR 0x00000001 | status: active | pending flush events 0 
+Connection Number: 2 
+	Operating Mode: NORMAL
+	 cjvy | WakeLockRefCount 0 | uid 10016 | cache size 0 | max cache size 0
+	 SIGNIFICANT_MOTION 0x00000011 | status: active | pending flush events 0 
+0 direct connections
+1 controlled connections
+Stop Connection Number: 0 
+	Operating Mode: NORMAL
+	 com.facebook.ads.redexgen.X.7u | WakeLockRefCount 0 | uid 10167 | cache size 0 | max cache size 0
+controlled apps : 
+	 10102,	 10112,	 10118,	 10120,	 10145,	 10154,	 10156,	 10158,	 10159,	 10161,	 10167,	 10168,	 10193,	 10214,	 10215,	 10220,	 10226,	 10227,	 10228,	 10229,	 10231,	 10232,
+Previous Registrations:
+02:30:22 - 0x00000001 pid= 6550 uid=10167 package=com.facebook.ads.redexgen.X.7u
+02:30:22 + 0x00000001 pid= 6550 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+02:27:39 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:27:39 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:27:27 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:27:26 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:25:07 - 0x00000001 pid= 3762 uid=10167 package=com.facebook.ads.redexgen.X.7u
+02:25:07 + 0x00000001 pid= 3762 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+02:24:18 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:24:18 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:24:06 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:24:06 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:24:05 - 0x00000001 pid=24684 uid=10071 package=plw
+02:24:05 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+02:19:05 - 0x00000001 pid= 2686 uid=10167 package=com.facebook.ads.redexgen.X.7u
+02:19:05 + 0x00000001 pid= 2686 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+02:18:20 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:18:20 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:18:07 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:18:07 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:18:06 - 0x00000001 pid=24684 uid=10071 package=plw
+02:18:06 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+02:15:48 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:15:48 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:15:47 - 0x00000001 pid=24684 uid=10071 package=plw
+02:15:47 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+02:06:22 - 0x00000001 pid=32585 uid=10167 package=com.facebook.ads.redexgen.X.7u
+02:06:22 + 0x00000001 pid=32585 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+02:04:28 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+02:04:28 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+02:04:28 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+02:04:28 - 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+02:04:28 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener
+02:04:28 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:04:23 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:04:21 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+02:04:21 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+02:04:20 - 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper
+02:04:20 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener samplingPeriod=20000us batchingPeriod=100000us
+02:04:20 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=20000us batchingPeriod=0us
+02:04:20 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=200000us batchingPeriod=0us
+02:04:20 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=200000us batchingPeriod=0us
+02:04:20 + 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=250000us batchingPeriod=0us
+02:04:20 + 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper samplingPeriod=0us batchingPeriod=0us
+01:56:50 - 0x00000001 pid=29571 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:56:50 + 0x00000001 pid=29571 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:56:23 - 0x00000001 pid=28639 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:56:23 + 0x00000001 pid=28639 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:54:33 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:54:33 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:54:20 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:54:20 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:54:19 - 0x00000001 pid=24684 uid=10071 package=plw
+01:54:18 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:52:01 - 0x00000001 pid=27541 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:52:01 + 0x00000001 pid=27541 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:46:19 - 0x00000001 pid=26874 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:46:19 + 0x00000001 pid=26874 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:46:01 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:46:01 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:45:59 - 0x00000001 pid=24684 uid=10071 package=plw
+01:45:59 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:45:43 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:45:43 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:45:30 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:45:30 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:45:29 - 0x00000001 pid=24684 uid=10071 package=plw
+01:45:29 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:45:13 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:45:12 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:45:12 - 0x00000001 pid=24684 uid=10071 package=plw
+01:45:11 + 0x00000001 pid=24684 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:41:13 - 0x00000001 pid=25675 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:41:13 + 0x00000001 pid=25675 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:41:10 - 0x00000001 pid=25243 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:41:10 + 0x00000001 pid=25243 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:38:44 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:38:43 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:38:31 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:38:31 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:38:13 - 0x00000001 pid=24054 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:38:13 + 0x00000001 pid=24054 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:37:15 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:37:15 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:37:01 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:37:01 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:36:59 - 0x00000002 pid=20416 uid=10071 package=rrz
+01:36:59 - 0x00000001 pid=20416 uid=10071 package=rrz
+01:36:59 - 0x00000001 pid=20416 uid=10071 package=plw
+01:36:59 + 0x00000001 pid=20416 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:36:59 + 0x00000002 pid=20416 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:36:59 + 0x00000001 pid=20416 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:36:40 - 0x00000001 pid=22801 uid=10167 package=com.facebook.ads.redexgen.X.7u
+01:36:40 + 0x00000001 pid=22801 uid=10167 package=com.facebook.ads.redexgen.X.7u samplingPeriod=20000us batchingPeriod=0us
+01:35:52 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:52 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:35:49 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+01:35:49 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+01:35:49 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+01:35:49 - 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+01:35:49 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener
+01:35:44 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:43 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:35:42 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:42 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener samplingPeriod=20000us batchingPeriod=100000us
+01:35:42 - 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper
+01:35:41 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:35:41 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=20000us batchingPeriod=0us
+01:35:41 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=200000us batchingPeriod=0us
+01:35:41 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=200000us batchingPeriod=0us
+01:35:41 + 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=250000us batchingPeriod=0us
+01:35:41 + 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper samplingPeriod=0us batchingPeriod=0us
+01:35:38 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:38 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:35:37 - 0x00000002 pid=20416 uid=10071 package=rrz
+01:35:37 - 0x00000001 pid=20416 uid=10071 package=rrz
+01:35:37 - 0x00000001 pid=20416 uid=10071 package=plw
+01:35:36 + 0x00000001 pid=20416 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:35:36 + 0x00000002 pid=20416 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:35:36 + 0x00000001 pid=20416 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:35:07 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:35:07 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:34:54 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:34:54 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:34:53 - 0x00000002 pid=20416 uid=10071 package=rrz
+01:34:53 - 0x00000001 pid=20416 uid=10071 package=rrz
+01:34:53 - 0x00000001 pid=20416 uid=10071 package=plw
+01:34:53 + 0x00000001 pid=20416 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:34:53 + 0x00000002 pid=20416 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:34:52 + 0x00000001 pid=20416 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:33:00 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:33:00 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:32:56 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:32:56 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:32:56 - 0x00000002 pid=20416 uid=10071 package=rrz
+01:32:56 - 0x00000001 pid=20416 uid=10071 package=rrz
+01:32:55 - 0x00000001 pid=20416 uid=10071 package=plw
+01:32:54 + 0x00000001 pid=20416 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:32:54 + 0x00000002 pid=20416 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:32:54 + 0x00000001 pid=20416 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:32:03 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+01:32:03 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector
+01:32:03 - 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+01:32:03 - 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController
+01:32:03 - 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener
+01:32:02 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:31:54 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:31:53 - 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener
+01:31:49 + 0x00000001 pid=20363 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:31:42 - 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener
+01:30:56 + 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:30:49 - 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener
+01:30:45 + 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:30:44 - 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener
+01:30:34 - 0x00000002 pid=18671 uid=10071 package=rrz
+01:30:34 - 0x00000001 pid=18671 uid=10071 package=rrz
+01:30:29 + 0x00000001 pid=18671 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:30:29 + 0x00000002 pid=18671 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:30:28 + 0x00000001 pid=18575 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:29:15 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:29:14 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.policy.WindowOrientationListener samplingPeriod=20000us batchingPeriod=100000us
+01:29:14 - 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper
+01:29:13 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:29:13 + 0x00000001 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=20000us batchingPeriod=0us
+01:29:13 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessControllerInjector samplingPeriod=200000us batchingPeriod=0us
+01:29:13 + 0x00000008 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=200000us batchingPeriod=0us
+01:29:13 + 0x00000005 pid= 1094 uid= 1000 package=com.android.server.display.AutomaticBrightnessController samplingPeriod=250000us batchingPeriod=0us
+01:29:13 + 0x00000008 pid= 1094 uid= 1000 package=miui.util.ProximitySensorWrapper samplingPeriod=0us batchingPeriod=0us
+01:28:56 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:28:55 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:28:55 - 0x00000002 pid=15692 uid=10071 package=rrz
+01:28:55 - 0x00000001 pid=15692 uid=10071 package=rrz
+01:28:55 - 0x00000001 pid=15692 uid=10071 package=plw
+01:28:54 + 0x00000001 pid=15692 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:28:54 + 0x00000002 pid=15692 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:28:54 + 0x00000001 pid=15692 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:27:56 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:27:56 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:27:55 - 0x00000002 pid=15692 uid=10071 package=rrz
+01:27:55 - 0x00000001 pid=15692 uid=10071 package=rrz
+01:27:55 - 0x00000001 pid=15692 uid=10071 package=plw
+01:27:55 + 0x00000001 pid=15692 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:27:55 + 0x00000002 pid=15692 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:27:55 + 0x00000001 pid=15692 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:27:25 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:27:25 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:27:24 - 0x00000002 pid=15692 uid=10071 package=rrz
+01:27:24 - 0x00000001 pid=15692 uid=10071 package=rrz
+01:27:24 - 0x00000001 pid=15692 uid=10071 package=plw
+01:27:23 + 0x00000001 pid=15692 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:27:23 + 0x00000002 pid=15692 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:27:23 + 0x00000001 pid=15692 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+01:25:16 - 0x00000002 pid=15692 uid=10071 package=rrz
+01:25:16 - 0x00000001 pid=15692 uid=10071 package=rrz
+01:25:16 - 0x00000001 pid=15692 uid=10071 package=plw
+01:25:16 - 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener
+01:25:14 + 0x00000001 pid=15098 uid=10022 package=android.view.OrientationEventListener samplingPeriod=20000us batchingPeriod=0us
+01:25:13 + 0x00000001 pid=15692 uid=10071 package=rrz samplingPeriod=20000us batchingPeriod=60000us
+01:25:13 + 0x00000002 pid=15692 uid=10071 package=rrz samplingPeriod=33333us batchingPeriod=60000us
+01:25:13 + 0x00000001 pid=15692 uid=10071 package=plw samplingPeriod=20000us batchingPeriod=0us
+PASS: shell am start -a android.intent.action.VIEW -d 'geo:0,0?q=<latitude>,<longitude>(Label)'
+Starting: Intent { act=android.intent.action.VIEW dat=geo:0,0?q=<latitude>,<longitude>(Label) }
+PASS: shell am start -a android.settings.WIFI_SETTINGS
+Starting: Intent { act=android.settings.WIFI_SETTINGS }
+PASS: shell am start -a android.settings.BLUETOOTH_SETTINGS
+Starting: Intent { act=android.settings.BLUETOOTH_SETTINGS }
+PASS: shell input keyevent KEYCODE_VIBRATE
+PASS: shell am start -a android.media.action.IMAGE_CAPTURE
+Starting: Intent { act=android.media.action.IMAGE_CAPTURE }
+PASS: shell dumpsys battery
+Current Battery Service state:
+  AC powered: false
+  USB powered: true
+  Wireless powered: false
+  Max charging current: 500000
+  Max charging voltage: 5000000
+  Charge counter: 2531
+  status: 2
+  health: 2
+  present: true
+  level: 88
+  scale: 100
+  voltage: 4320
+  temperature: 270
+  technology: Li-poly
+PASS: shell df
+Filesystem              1K-blocks     Used Available Use% Mounted on
+/dev/root                 2539468  2394668    128416  95% /
+tmpfs                     1447332     1400   1445932   1% /dev
+tmpfs                     1447332        0   1447332   0% /mnt
+/dev/block/dm-1            761764   314768    431520  43% /vendor
+none                      1447332        0   1447332   0% /sys/fs/cgroup
+/dev/block/mmcblk0p38      237536     6588    223088   3% /cache
+/dev/block/mmcblk0p31      499656   377596    106336  79% /cust
+/dev/block/dm-2          25043816 19769784   5126576  80% /data
+/data/media              25043816 19769784   5126576  80% /storage/emulated
+/mnt/media_rw/1201-E8CC   7621632   453496   7168136   6% /storage/1201-E8CC
+PASS: shell wm size
+Physical size: 720x1440
+PASS: shell wm density
+Physical density: 320
+PASS: shell ping -c 10 www.google.com
+PING www.google.com (142.250.201.36) 56(84) bytes of data.
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=1 ttl=118 time=220 ms
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=2 ttl=118 time=72.7 ms
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=3 ttl=118 time=71.1 ms
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=4 ttl=118 time=370 ms
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=5 ttl=118 time=392 ms
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=6 ttl=118 time=102 ms
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=7 ttl=118 time=336 ms
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=8 ttl=118 time=359 ms
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=9 ttl=118 time=381 ms
+64 bytes from mrs08s20-in-f4.1e100.net (142.250.201.36): icmp_seq=10 ttl=118 time=405 ms
+
+--- www.google.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9010ms
+rtt min/avg/max/mdev = 71.163/271.276/405.754/133.153 ms
+PASS: shell dd if=/dev/zero of=/sdcard/testfile bs=1024 count=1024
+PASS: shell dd if=/sdcard/testfile of=/dev/null bs=1024 count=1024
+PASS: shell lsusb
+PASS: shell dumpsys nfc
+PASS: shell settings put system flashlight_available 1
+PASS: shell am start -a android.intent.action.MAIN -n com.android.systemui/com.android.systemui.flashlight.FlashlightActivity
+Starting: Intent { act=android.intent.action.MAIN cmp=com.android.systemui/.flashlight.FlashlightActivity }
+PASS: shell dumpsys proximity
+PASS: shell am start -a android.intent.action.MAIN -n com.android.settings/.DevelopmentSettings
+Starting: Intent { act=android.intent.action.MAIN cmp=com.android.settings/.DevelopmentSettings }
+PASS: shell settings put system accelerometer_rotation 1
+PASS: shell settings put system user_rotation 1
+PASS: shell am start -a android.provider.MediaStore.RECORD_SOUND
+Starting: Intent { act=android.provider.MediaStore.RECORD_SOUND }
+PASS: shell am start -a android.media.action.VIDEO_CAPTURE
+Starting: Intent { act=android.media.action.VIDEO_CAPTURE }
+PASS: shell input keyevent 120
+PASS: shell cat /proc/cpuinfo
+processor	: 0
+Processor	: ARMv7 Processor rev 4 (v7l)
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.17
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+Processor	: ARMv7 Processor rev 4 (v7l)
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+Processor	: ARMv7 Processor rev 4 (v7l)
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+Processor	: ARMv7 Processor rev 4 (v7l)
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 4
+Processor	: ARMv7 Processor rev 4 (v7l)
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 46.09
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 5
+Processor	: ARMv7 Processor rev 4 (v7l)
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 46.09
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 6
+Processor	: ARMv7 Processor rev 4 (v7l)
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 46.09
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 7
+Processor	: ARMv7 Processor rev 4 (v7l)
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 46.09
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6762V/CB
+Revision	: 0000
+Serial		: 0000000000000000
+PASS: shell dumpsys batteryinfo
+PASS: shell df -h
+Filesystem              Size  Used Avail Use% Mounted on
+/dev/root               2.4G  2.2G  125M  95% /
+tmpfs                   1.3G  1.3M  1.3G   1% /dev
+tmpfs                   1.3G     0  1.3G   0% /mnt
+/dev/block/dm-1         744M  307M  421M  43% /vendor
+none                    1.3G     0  1.3G   0% /sys/fs/cgroup
+/dev/block/mmcblk0p38   232M  6.4M  218M   3% /cache
+/dev/block/mmcblk0p31   488M  369M  104M  79% /cust
+/dev/block/dm-2          24G   19G  4.8G  80% /data
+/data/media              24G   19G  4.8G  80% /storage/emulated
+/mnt/media_rw/1201-E8CC 7.2G  443M  6.8G   6% /storage/1201-E8CC
+PASS: shell am start -a android.settings.WIFI_DISPLAY_SETTINGS
+Starting: Intent { act=android.settings.WIFI_DISPLAY_SETTINGS }
+PASS: shell am start -a android.intent.action.MAIN -n com.android.phone/.NetworkSetting
+Starting: Intent { act=android.intent.action.MAIN cmp=com.android.phone/.NetworkSetting }
+PASS: shell getprop
+[Build.BRAND]: [MTK]
+[audio.chk.cal.spk]: [0]
+[audio.chk.cal.us]: [0]
+[bt.profiles.avrcp.multiPlayer.enable]: [0]
+[camera.disable_zsl_mode]: [1]
+[dalvik.vm.appimageformat]: [lz4]
+[dalvik.vm.bg-dex2oat-threads]: [4]
+[dalvik.vm.boot-dex2oat-threads]: [6]
+[dalvik.vm.dex2oat-Xms]: [64m]
+[dalvik.vm.dex2oat-Xmx]: [512m]
+[dalvik.vm.dex2oat-minidebuginfo]: [true]
+[dalvik.vm.dex2oat-threads]: [6]
+[dalvik.vm.dexopt.secondary]: [true]
+[dalvik.vm.heapgrowthlimit]: [256m]
+[dalvik.vm.heapsize]: [384m]
+[dalvik.vm.image-dex2oat-Xms]: [64m]
+[dalvik.vm.image-dex2oat-Xmx]: [64m]
+[dalvik.vm.isa.arm.features]: [default]
+[dalvik.vm.isa.arm.variant]: [cortex-a53]
+[dalvik.vm.mtk-stack-trace-file]: [/data/anr/mtk_traces.txt]
+[dalvik.vm.stack-trace-dir]: [/data/anr]
+[dalvik.vm.usejit]: [true]
+[dalvik.vm.usejitprofiles]: [true]
+[debug.atrace.tags.enableflags]: [0]
+[debug.force_rtl]: [0]
+[debug.media.vpp.enable]: [true]
+[debug.sf.disable_backpressure]: [1]
+[dev.bootcomplete]: [1]
+[drm.service.enabled]: [true]
+[events.cpu]: [true]
+[fmradio.driver.enable]: [0]
+[gsm.current.phone-type]: [1,1]
+[gsm.defaultpdpcontext.active]: [true]
+[gsm.network.type]: [Unknown,LTE]
+[gsm.operator.alpha]: [,Maroc Telecom]
+[gsm.operator.iso-country]: [,ma]
+[gsm.operator.isroaming]: [false,false]
+[gsm.operator.numeric]: [,60401]
+[gsm.operator.orig.alpha]: [,Maroc Telecom]
+[gsm.sim.operator.alpha]: [,Maroc Telecom]
+[gsm.sim.operator.iso-country]: [,ma]
+[gsm.sim.operator.numeric]: [,60401]
+[gsm.sim.operator.orig.alpha]: [,Maroc Telecom]
+[gsm.sim.state]: [,LOADED]
+[gsm.version.baseband]: [MOLY.LR12A.R2.MP.V66.P18,MOLY.LR12A.R2.MP.V66.P18]
+[gsm.version.ril-impl]: [android reference-ril 1.0]
+[hwservicemanager.ready]: [true]
+[init.svc.aal]: [running]
+[init.svc.adbd]: [running]
+[init.svc.aee-reinit]: [stopped]
+[init.svc.aee_aed]: [running]
+[init.svc.aee_aedv]: [running]
+[init.svc.agpsd]: [running]
+[init.svc.audioserver]: [running]
+[init.svc.batterywarning]: [running]
+[init.svc.bluetooth-1-0]: [running]
+[init.svc.bootanim]: [stopped]
+[init.svc.bootlogoupdater]: [stopped]
+[init.svc.camerahalserver]: [running]
+[init.svc.cameraserver]: [running]
+[init.svc.ccci3_mdinit]: [stopped]
+[init.svc.ccci_mdinit]: [running]
+[init.svc.charge_logger]: [running]
+[init.svc.connsyslogger]: [running]
+[init.svc.dfps-1-0]: [running]
+[init.svc.drm]: [running]
+[init.svc.fdpp]: [running]
+[init.svc.flash_recovery]: [stopped]
+[init.svc.fuelgauged]: [running]
+[init.svc.fuelgauged_nvram]: [stopped]
+[init.svc.gatekeeperd]: [running]
+[init.svc.ged_srv]: [running]
+[init.svc.gnss_service]: [running]
+[init.svc.health-hal-2-0]: [running]
+[init.svc.hidl_memory]: [running]
+[init.svc.hwservicemanager]: [running]
+[init.svc.incidentd]: [running]
+[init.svc.installd]: [running]
+[init.svc.interfaces.factoryInterface@1.0-service]: [running]
+[init.svc.ipsec_mon]: [running]
+[init.svc.keystore]: [running]
+[init.svc.lbs_dbg]: [running]
+[init.svc.lbs_hidl_service]: [running]
+[init.svc.light-hal-2-0]: [running]
+[init.svc.lmkd]: [running]
+[init.svc.logd]: [running]
+[init.svc.logd-reinit]: [stopped]
+[init.svc.mcd_init]: [stopped]
+[init.svc.mcd_service]: [running]
+[init.svc.mdnsd]: [running]
+[init.svc.media]: [running]
+[init.svc.mediacodec]: [running]
+[init.svc.mediadrm]: [running]
+[init.svc.mediaextractor]: [running]
+[init.svc.mediametrics]: [running]
+[init.svc.mfidoca]: [running]
+[init.svc.miui-early-boot]: [stopped]
+[init.svc.miuibooster]: [running]
+[init.svc.mmc_ffu_ss1]: [stopped]
+[init.svc.mmc_ffu_ss2]: [stopped]
+[init.svc.mms-1-1]: [running]
+[init.svc.mnld]: [running]
+[init.svc.mobile_log_d]: [running]
+[init.svc.mqsasd]: [running]
+[init.svc.mtk_advcamserver]: [running]
+[init.svc.mtk_camdumpserver]: [running]
+[init.svc.mtkcodecservice-1-1]: [running]
+[init.svc.netd]: [running]
+[init.svc.netdagent]: [running]
+[init.svc.netdiag]: [running]
+[init.svc.nvram-hidl-1-1]: [running]
+[init.svc.nvram_daemon]: [stopped]
+[init.svc.power-hal-2-1]: [running]
+[init.svc.pq-2-2]: [running]
+[init.svc.sensors-hal-1-0]: [running]
+[init.svc.servicemanager]: [running]
+[init.svc.setlockstate]: [stopped]
+[init.svc.shelld]: [running]
+[init.svc.sn]: [stopped]
+[init.svc.soter-1-0]: [running]
+[init.svc.statsd]: [running]
+[init.svc.storaged]: [running]
+[init.svc.surfaceflinger]: [running]
+[init.svc.system_perf_init]: [stopped]
+[init.svc.teei_daemon]: [running]
+[init.svc.thermal]: [running]
+[init.svc.thermal_manager]: [stopped]
+[init.svc.thermald]: [running]
+[init.svc.thermalloadalgod]: [running]
+[init.svc.thermalservice]: [running]
+[init.svc.tombstoned]: [running]
+[init.svc.ueventd]: [running]
+[init.svc.usbd]: [stopped]
+[init.svc.vendor.audio-hal-4-0]: [running]
+[init.svc.vendor.bip]: [running]
+[init.svc.vendor.cas-hal-1-0]: [running]
+[init.svc.vendor.ccci3_fsd]: [stopped]
+[init.svc.vendor.ccci_fsd]: [running]
+[init.svc.vendor.ccci_rpcd]: [running]
+[init.svc.vendor.configstore-hal]: [running]
+[init.svc.vendor.drm-clearkey-hal-1-1]: [running]
+[init.svc.vendor.drm-hal-1-0]: [running]
+[init.svc.vendor.drm-widevine-hal-1-1]: [running]
+[init.svc.vendor.epdg_wod]: [running]
+[init.svc.vendor.fps_hal]: [running]
+[init.svc.vendor.gatekeeper-1-0]: [running]
+[init.svc.vendor.gralloc-2-0]: [running]
+[init.svc.vendor.gsm0710muxd]: [running]
+[init.svc.vendor.hwcomposer-2-1]: [running]
+[init.svc.vendor.keymaster-3-0]: [running]
+[init.svc.vendor.memtrack-hal-1-0]: [running]
+[init.svc.vendor.misys]: [running]
+[init.svc.vendor.misys@2.0]: [running]
+[init.svc.vendor.mlipay-1-1]: [running]
+[init.svc.vendor.move_data_sh]: [stopped]
+[init.svc.vendor.move_teei_data_sh]: [stopped]
+[init.svc.vendor.mtdservice-1-2]: [running]
+[init.svc.vendor.ril-daemon-mtk]: [running]
+[init.svc.vendor.thermal-hal-1-0]: [running]
+[init.svc.vendor.tidaservice-1-1]: [running]
+[init.svc.vendor.usb-hal-1-1]: [running]
+[init.svc.vendor.vibrator-1-0]: [running]
+[init.svc.vendor.volte_imcb]: [running]
+[init.svc.vendor.volte_stack]: [running]
+[init.svc.vendor.volte_ua]: [running]
+[init.svc.vendor.vsimservice]: [running]
+[init.svc.vendor.wifi_hal_legacy]: [running]
+[init.svc.vndservicemanager]: [running]
+[init.svc.vold]: [running]
+[init.svc.volte_imsm_93]: [running]
+[init.svc.vtservice]: [running]
+[init.svc.vtservice_hidl]: [running]
+[init.svc.wfca]: [running]
+[init.svc.wificond]: [running]
+[init.svc.wlan_assistant]: [running]
+[init.svc.wmt_launcher]: [running]
+[init.svc.wmt_loader]: [stopped]
+[init.svc.wpa_supplicant]: [running]
+[init.svc.zygote]: [running]
+[keyguard.no_require_sim]: [true]
+[log.tag]: [M]
+[log.tag.stats_log]: [I]
+[mcd.extra.params]: []
+[mediatek.wlan.chip]: [CONSYS_MT6765]
+[mediatek.wlan.ctia]: [0]
+[mediatek.wlan.module.postfix]: [_consys_mt6765]
+[mtk.eccci.c2k]: [enabled]
+[net.bt.name]: [Android]
+[net.lte.data.roaming.setting1]: [false]
+[net.lte.data.roaming1]: [false]
+[net.perf.internal.cpu.core]: [4,4,0,0]
+[net.perf.internal.cpu.freq]: [-1,-1,-1,-1]
+[net.perf.rps.default]: [ff]
+[net.perf.tether.cpu.core]: [4,4,0,0]
+[net.perf.tether.cpu.freq]: [1183000,1638000,0,0]
+[net.perf.tether.rps]: [0f]
+[net.qtaguid_enabled]: [1]
+[net.tcp.default_init_rwnd]: [60]
+[persist.camera.cam.list]: [61968]
+[persist.dalvik.vm.dex2oat-threads]: [6]
+[persist.dirac.afm.mode]: [global]
+[persist.enable_task_snapshots]: [false]
+[persist.log.tag.AT]: [I]
+[persist.log.tag.AdnRecord]: [I]
+[persist.log.tag.AdnRecordCache]: [I]
+[persist.log.tag.AdnRecordLoader]: [I]
+[persist.log.tag.AirplaneHandler]: [I]
+[persist.log.tag.AutoRegSmsFwk]: [I]
+[persist.log.tag.C2K_RIL-DATA]: [I]
+[persist.log.tag.CapaSwitch]: [I]
+[persist.log.tag.CarrierExpressServiceImpl]: [I]
+[persist.log.tag.CarrierExpressServiceImplExt]: [I]
+[persist.log.tag.CdmaMoSms]: [I]
+[persist.log.tag.CdmaMtSms]: [I]
+[persist.log.tag.ConSmsFwkExt]: [I]
+[persist.log.tag.CountryDetector]: [I]
+[persist.log.tag.DC-1]: [I]
+[persist.log.tag.DC-2]: [I]
+[persist.log.tag.DCT]: [I]
+[persist.log.tag.DSSelector]: [I]
+[persist.log.tag.DSSelectorOP01]: [I]
+[persist.log.tag.DSSelectorOP02]: [I]
+[persist.log.tag.DSSelectorOP09]: [I]
+[persist.log.tag.DSSelectorOP18]: [I]
+[persist.log.tag.DSSelectorOm]: [I]
+[persist.log.tag.DSSelectorUtil]: [I]
+[persist.log.tag.DataDispatcher]: [I]
+[persist.log.tag.DataOnlySmsFwk]: [I]
+[persist.log.tag.DcFcMgr]: [I]
+[persist.log.tag.DupSmsFilterExt]: [I]
+[persist.log.tag.ECCCallHelper]: [I]
+[persist.log.tag.ECCNumUtils]: [I]
+[persist.log.tag.ECCRetryHandler]: [I]
+[persist.log.tag.ECCRuleHandler]: [I]
+[persist.log.tag.ECCSwitchPhone]: [I]
+[persist.log.tag.ExternalSimMgr]: [I]
+[persist.log.tag.GbaApp]: [I]
+[persist.log.tag.GbaBsfProcedure]: [I]
+[persist.log.tag.GbaBsfResponse]: [I]
+[persist.log.tag.GbaDebugParam]: [I]
+[persist.log.tag.GbaService]: [I]
+[persist.log.tag.GsmCallTkrHlpr]: [I]
+[persist.log.tag.GsmCdmaConn]: [I]
+[persist.log.tag.GsmCdmaPhone]: [I]
+[persist.log.tag.GsmConnection]: [I]
+[persist.log.tag.GsmMmiCode]: [I]
+[persist.log.tag.IMSRILRequest]: [I]
+[persist.log.tag.IMS_RILA]: [I]
+[persist.log.tag.IccCardProxy]: [I]
+[persist.log.tag.IccPhoneBookIM]: [I]
+[persist.log.tag.IccProvider]: [I]
+[persist.log.tag.ImsApp]: [I]
+[persist.log.tag.ImsBaseCommands]: [I]
+[persist.log.tag.ImsCall]: [I]
+[persist.log.tag.ImsCallProfile]: [I]
+[persist.log.tag.ImsCallSession]: [I]
+[persist.log.tag.ImsEcbm]: [I]
+[persist.log.tag.ImsEcbmProxy]: [I]
+[persist.log.tag.ImsManager]: [I]
+[persist.log.tag.ImsPhone]: [I]
+[persist.log.tag.ImsPhoneBase]: [I]
+[persist.log.tag.ImsPhoneCall]: [I]
+[persist.log.tag.ImsService]: [I]
+[persist.log.tag.ImsUt]: [I]
+[persist.log.tag.ImsUtService]: [I]
+[persist.log.tag.ImsVTProvider]: [I]
+[persist.log.tag.IsimFileHandler]: [I]
+[persist.log.tag.IsimRecords]: [I]
+[persist.log.tag.MGsmSMSDisp]: [I]
+[persist.log.tag.MSimSmsIStatus]: [I]
+[persist.log.tag.MSmsStorageMtr]: [I]
+[persist.log.tag.MSmsUsageMtr]: [I]
+[persist.log.tag.MTKSST]: [D]
+[persist.log.tag.MtkAdnRecord]: [I]
+[persist.log.tag.MtkConSmsFwk]: [I]
+[persist.log.tag.MtkCsimFH]: [I]
+[persist.log.tag.MtkDCT]: [I]
+[persist.log.tag.MtkDupSmsFilter]: [I]
+[persist.log.tag.MtkEmbmsAdaptor]: [I]
+[persist.log.tag.MtkFactory]: [I]
+[persist.log.tag.MtkGsmCdmaConn]: [I]
+[persist.log.tag.MtkIccCardProxy]: [I]
+[persist.log.tag.MtkIccPHBIM]: [I]
+[persist.log.tag.MtkIccProvider]: [I]
+[persist.log.tag.MtkIccSmsIntMgr]: [I]
+[persist.log.tag.MtkImsManager]: [I]
+[persist.log.tag.MtkImsService]: [I]
+[persist.log.tag.MtkIsimFH]: [I]
+[persist.log.tag.MtkPhoneNotifr]: [I]
+[persist.log.tag.MtkPhoneNumberUtils]: [I]
+[persist.log.tag.MtkPhoneSwitcher]: [D]
+[persist.log.tag.MtkRecordLoader]: [I]
+[persist.log.tag.MtkRetryManager]: [I]
+[persist.log.tag.MtkRuimFH]: [I]
+[persist.log.tag.MtkSIMFH]: [I]
+[persist.log.tag.MtkSIMRecords]: [I]
+[persist.log.tag.MtkSmsCbHeader]: [I]
+[persist.log.tag.MtkSmsManager]: [I]
+[persist.log.tag.MtkSmsMessage]: [I]
+[persist.log.tag.MtkSpnOverride]: [I]
+[persist.log.tag.MtkSubCtrl]: [I]
+[persist.log.tag.MtkUiccCard]: [I]
+[persist.log.tag.MtkUiccCardApp]: [I]
+[persist.log.tag.MtkUiccCtrl]: [I]
+[persist.log.tag.MtkUsimFH]: [I]
+[persist.log.tag.Mtk_RIL_ImsSms]: [I]
+[persist.log.tag.NetAgentService]: [I]
+[persist.log.tag.NetLnkEventHdlr]: [I]
+[persist.log.tag.NetworkPolicy]: [I]
+[persist.log.tag.NetworkStats]: [I]
+[persist.log.tag.OperatorUtils]: [I]
+[persist.log.tag.Phone]: [I]
+[persist.log.tag.PhoneConfigurationSettings]: [I]
+[persist.log.tag.PhoneFactory]: [I]
+[persist.log.tag.ProxyController]: [I]
+[persist.log.tag.RFX]: [I]
+[persist.log.tag.RIL]: [I]
+[persist.log.tag.RIL-CC]: [I]
+[persist.log.tag.RIL-DATA]: [I]
+[persist.log.tag.RIL-Fusion]: [I]
+[persist.log.tag.RIL-Netlink]: [I]
+[persist.log.tag.RIL-OEM]: [I]
+[persist.log.tag.RIL-PHB]: [I]
+[persist.log.tag.RIL-Parcel]: [I]
+[persist.log.tag.RIL-RP]: [I]
+[persist.log.tag.RIL-SIM]: [I]
+[persist.log.tag.RIL-SMS]: [I]
+[persist.log.tag.RIL-SS]: [I]
+[persist.log.tag.RIL-SocListen]: [I]
+[persist.log.tag.RIL-Socket]: [I]
+[persist.log.tag.RILC]: [I]
+[persist.log.tag.RILC-MTK]: [I]
+[persist.log.tag.RILC-OP]: [I]
+[persist.log.tag.RILC-RP]: [I]
+[persist.log.tag.RILD]: [I]
+[persist.log.tag.RILMD2-SS]: [I]
+[persist.log.tag.RILMUXD]: [I]
+[persist.log.tag.RIL_Mux]: [I]
+[persist.log.tag.RIL_UIM_SOCKET]: [I]
+[persist.log.tag.RP_DAC]: [I]
+[persist.log.tag.RP_DC]: [I]
+[persist.log.tag.RP_IMS]: [I]
+[persist.log.tag.RTC_DAC]: [I]
+[persist.log.tag.RadioManager]: [I]
+[persist.log.tag.RetryManager]: [I]
+[persist.log.tag.RfxAction]: [I]
+[persist.log.tag.RfxChannelMgr]: [I]
+[persist.log.tag.RfxCloneMgr]: [I]
+[persist.log.tag.RfxContFactory]: [I]
+[persist.log.tag.RfxController]: [I]
+[persist.log.tag.RfxDT]: [I]
+[persist.log.tag.RfxDebugInfo]: [I]
+[persist.log.tag.RfxDefDestUtils]: [I]
+[persist.log.tag.RfxDisThread]: [I]
+[persist.log.tag.RfxFragEnc]: [I]
+[persist.log.tag.RfxHandlerMgr]: [I]
+[persist.log.tag.RfxIdToMsgId]: [I]
+[persist.log.tag.RfxIdToStr]: [I]
+[persist.log.tag.RfxMainThread]: [I]
+[persist.log.tag.RfxMclDisThread]: [I]
+[persist.log.tag.RfxMclMessenger]: [I]
+[persist.log.tag.RfxMclStatusMgr]: [I]
+[persist.log.tag.RfxMessage]: [I]
+[persist.log.tag.RfxObject]: [I]
+[persist.log.tag.RfxOpUtils]: [I]
+[persist.log.tag.RfxRilAdapter]: [I]
+[persist.log.tag.RfxRilUtils]: [I]
+[persist.log.tag.RfxRoot]: [I]
+[persist.log.tag.RfxSM]: [I]
+[persist.log.tag.RfxSocketSM]: [I]
+[persist.log.tag.RfxStatusMgr]: [I]
+[persist.log.tag.RfxTimer]: [I]
+[persist.log.tag.RfxTransUtils]: [I]
+[persist.log.tag.RfxVersionMgr]: [I]
+[persist.log.tag.RilClient]: [I]
+[persist.log.tag.RilMalClient]: [I]
+[persist.log.tag.RilOemClient]: [I]
+[persist.log.tag.RilOpProxy]: [I]
+[persist.log.tag.RmcCapa]: [I]
+[persist.log.tag.RmcCdmaSimRequest]: [I]
+[persist.log.tag.RmcCdmaSimUrc]: [I]
+[persist.log.tag.RmcCommSimOpReq]: [I]
+[persist.log.tag.RmcCommSimReq]: [I]
+[persist.log.tag.RmcCommSimUrc]: [I]
+[persist.log.tag.RmcDcCommon]: [I]
+[persist.log.tag.RmcDcDefault]: [I]
+[persist.log.tag.RmcDcPdnManager]: [I]
+[persist.log.tag.RmcDcReqHandler]: [I]
+[persist.log.tag.RmcDcUtility]: [I]
+[persist.log.tag.RmcEccNumberUrcHandler]: [D]
+[persist.log.tag.RmcEmbmsReq]: [I]
+[persist.log.tag.RmcEmbmsUrc]: [I]
+[persist.log.tag.RmcGsmSimRequest]: [I]
+[persist.log.tag.RmcGsmSimUrc]: [I]
+[persist.log.tag.RmcImsCtlReqHdl]: [I]
+[persist.log.tag.RmcImsCtlUrcHdl]: [I]
+[persist.log.tag.RmcNwHdlr]: [D]
+[persist.log.tag.RmcNwRTReqHdlr]: [D]
+[persist.log.tag.RmcNwReqHdlr]: [D]
+[persist.log.tag.RmcOemHandler]: [I]
+[persist.log.tag.RmcOpRadioReq]: [I]
+[persist.log.tag.RmcPhbReq]: [I]
+[persist.log.tag.RmcPhbUrc]: [I]
+[persist.log.tag.RmcRadioReq]: [I]
+[persist.log.tag.RmcRatSwHdlr]: [D]
+[persist.log.tag.RmcWp]: [I]
+[persist.log.tag.RpAudioControl]: [I]
+[persist.log.tag.RpCallControl]: [I]
+[persist.log.tag.RpCdmaOemCtrl]: [I]
+[persist.log.tag.RpCdmaRadioCtrl]: [I]
+[persist.log.tag.RpFOUtils]: [I]
+[persist.log.tag.RpMDCtrl]: [I]
+[persist.log.tag.RpMalController]: [I]
+[persist.log.tag.RpModemMessage]: [I]
+[persist.log.tag.RpPhbController]: [I]
+[persist.log.tag.RpRadioCtrl]: [I]
+[persist.log.tag.RpRadioMessage]: [I]
+[persist.log.tag.RpRilClientCtrl]: [I]
+[persist.log.tag.RpSimController]: [I]
+[persist.log.tag.RpSsController]: [I]
+[persist.log.tag.RtcCapa]: [I]
+[persist.log.tag.RtcCommSimCtrl]: [I]
+[persist.log.tag.RtcDC]: [I]
+[persist.log.tag.RtcEccNumberController]: [D]
+[persist.log.tag.RtcEmbmsAt]: [I]
+[persist.log.tag.RtcEmbmsUtil]: [I]
+[persist.log.tag.RtcIms]: [I]
+[persist.log.tag.RtcImsConference]: [I]
+[persist.log.tag.RtcImsDialog]: [I]
+[persist.log.tag.RtcModeCont]: [I]
+[persist.log.tag.RtcNwCtrl]: [I]
+[persist.log.tag.RtcPhb]: [I]
+[persist.log.tag.RtcRadioCont]: [I]
+[persist.log.tag.RtcRatSwCtrl]: [D]
+[persist.log.tag.RtcWp]: [I]
+[persist.log.tag.SIMRecords]: [I]
+[persist.log.tag.SSDecisonMaker]: [I]
+[persist.log.tag.SimSwitchOP01]: [I]
+[persist.log.tag.SimSwitchOP02]: [I]
+[persist.log.tag.SimSwitchOP18]: [I]
+[persist.log.tag.SimservType]: [I]
+[persist.log.tag.SimservsTest]: [I]
+[persist.log.tag.SlotQueueEntry]: [I]
+[persist.log.tag.SmsPlusCode]: [I]
+[persist.log.tag.SpnOverride]: [I]
+[persist.log.tag.SresResponse]: [I]
+[persist.log.tag.SuppMsgMgr]: [I]
+[persist.log.tag.SuppSrvConfig]: [I]
+[persist.log.tag.TeleConfCtrler]: [I]
+[persist.log.tag.TeleConnService]: [I]
+[persist.log.tag.TelephonyConf]: [I]
+[persist.log.tag.TelephonyConn]: [I]
+[persist.log.tag.UiccCard]: [I]
+[persist.log.tag.UiccController]: [I]
+[persist.log.tag.VT]: [I]
+[persist.log.tag.VsimAdaptor]: [I]
+[persist.log.tag.WORLDMODE]: [I]
+[persist.log.tag.WfoApp]: [I]
+[persist.logd.size]: []
+[persist.logd.size.crash]: [1M]
+[persist.logd.size.radio]: [4M]
+[persist.logd.size.system]: [4M]
+[persist.meta.dumpdata]: [0]
+[persist.power.useautobrightadj]: [true]
+[persist.radio.airplane_mode_on]: [0]
+[persist.radio.apm_sim_not_pwdn]: [1]
+[persist.radio.default.data]: [1]
+[persist.radio.default.sim]: [0]
+[persist.radio.default.voice]: [-1]
+[persist.radio.imei1]: [868151038131985]
+[persist.radio.imei2]: [868151038131993]
+[persist.radio.lte.chip]: [0]
+[persist.radio.mobile.data]: [0,0]
+[persist.radio.multisim.config]: [dsds]
+[persist.radio.reset_on_switch]: [false]
+[persist.service.acm.enable]: [0]
+[persist.sys.ai_preload_cloud]: [0]
+[persist.sys.apply_miui_browser]: [false]
+[persist.sys.boot.reason]: [shutdown,battery]
+[persist.sys.country]: []
+[persist.sys.dalvik.vm.lib.2]: [libart.so]
+[persist.sys.device_name]: [Ily455]
+[persist.sys.display_cabc]: [0]
+[persist.sys.enable_inputopts]: [true]
+[persist.sys.enable_ioprefetch]: [false]
+[persist.sys.enable_miui_booster]: [1]
+[persist.sys.enable_pinfile]: [true]
+[persist.sys.gps.lpp]: [0]
+[persist.sys.hardcoder.name]: [miui_booster]
+[persist.sys.job_delay]: [true]
+[persist.sys.language]: []
+[persist.sys.locale]: [en-US]
+[persist.sys.localevar]: []
+[persist.sys.manual_select_band]: [false]
+[persist.sys.mcd_config_file]: [/system/etc/mcd_default.conf]
+[persist.sys.mem_cgated]: [1]
+[persist.sys.mem_fgated]: [1]
+[persist.sys.memctrl]: [on]
+[persist.sys.miconnect.running]: [1]
+[persist.sys.mitalk.enable]: [true]
+[persist.sys.miuibooster.name]: [miui_booster]
+[persist.sys.notification_rank]: [0]
+[persist.sys.notification_ver]: [1]
+[persist.sys.opt_accessibility]: [false]
+[persist.sys.released]: [true]
+[persist.sys.sc_allow_conn]: [true]
+[persist.sys.screen.mode]: [3]
+[persist.sys.screen.value]: [32]
+[persist.sys.shutdown_state]: [2]
+[persist.sys.smartcover_mode]: [0]
+[persist.sys.strictmode.disable]: [1]
+[persist.sys.strictmode.visual]: []
+[persist.sys.support_detect_fc]: [false]
+[persist.sys.support_fakecell]: [false]
+[persist.sys.task_isolation]: [true]
+[persist.sys.timezone]: [Africa/Casablanca]
+[persist.sys.ui.hw]: [false]
+[persist.sys.usb.config]: [adb]
+[persist.sys.watchdog_enhanced]: [true]
+[persist.sys.webview.vmsize]: [143596520]
+[persist.vendor.aee.db.count]: [4]
+[persist.vendor.aee.fatal_db.count]: [4]
+[persist.vendor.aeev.core.direct]: [disable]
+[persist.vendor.aeev.core.dump]: [disable]
+[persist.vendor.aeev.db.count]: [4]
+[persist.vendor.aeev.fatal_db.count]: [4]
+[persist.vendor.audiohal.bt_headset_nrec_on]: [0]
+[persist.vendor.camera3.pipeline.bufnum.base.imgo]: [5]
+[persist.vendor.camera3.pipeline.bufnum.base.lcso]: [5]
+[persist.vendor.camera3.pipeline.bufnum.base.rrzo]: [5]
+[persist.vendor.camera3.pipeline.bufnum.base.rsso]: [5]
+[persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv]: [8]
+[persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo]: [8]
+[persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso]: [8]
+[persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo]: [8]
+[persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso]: [8]
+[persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv]: [6]
+[persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo]: [6]
+[persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso]: [6]
+[persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo]: [6]
+[persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso]: [6]
+[persist.vendor.connsys.bt_fw_ver]: [t-neptune-main-soc1_0e1-1809-SOC1_0_E1_ASIC_ROM_PATCH_EMI-20181129110050]
+[persist.vendor.connsys.chipid]: [0x6765]
+[persist.vendor.connsys.dynamic.dump]: [0]
+[persist.vendor.connsys.patch.version]: [181129110050000]
+[persist.vendor.connsys.wifi_fw_ver]: [190212160031000]
+[persist.vendor.ims_support]: [1]
+[persist.vendor.log.tel_log_ctrl]: [1]
+[persist.vendor.migrate_legacy_props]: [done]
+[persist.vendor.mims_support]: [2]
+[persist.vendor.mtk.aee.mode]: [4]
+[persist.vendor.mtk.aeev.allocate]: [fullmem]
+[persist.vendor.mtk.aeev.mode]: [4]
+[persist.vendor.mtk.provision.int.01]: [26,0;27,1;]
+[persist.vendor.mtk.provision.int.11]: [26,0;27,1;]
+[persist.vendor.mtk.provision.mccmnc.0]: [60402]
+[persist.vendor.mtk.provision.mccmnc.1]: [60401]
+[persist.vendor.mtk.vilte.enable]: [0]
+[persist.vendor.mtk.viwifi.enable]: [0]
+[persist.vendor.mtk.volte.enable]: [0]
+[persist.vendor.mtk.wfc.enable]: [0]
+[persist.vendor.mtk_ct_volte_support]: [2]
+[persist.vendor.mtk_dynamic_ims_switch]: [1]
+[persist.vendor.mtk_sim_switch_policy]: [2]
+[persist.vendor.mtk_wfc_support]: [1]
+[persist.vendor.radio.airplane.mode.on]: [false]
+[persist.vendor.radio.c_capability_slot]: [0]
+[persist.vendor.radio.data.iccid]: [8921201018540026612F]
+[persist.vendor.radio.data.oem_wifi_support_apn]: [1]
+[persist.vendor.radio.fd.counter]: [150]
+[persist.vendor.radio.fd.off.counter]: [50]
+[persist.vendor.radio.fd.off.r8.counter]: [50]
+[persist.vendor.radio.fd.r8.counter]: [150]
+[persist.vendor.radio.ls1icid]: [null]
+[persist.vendor.radio.ls2icid]: [null]
+[persist.vendor.radio.mobile.data]: [0,0]
+[persist.vendor.radio.msimmode]: [dsds]
+[persist.vendor.radio.mtk_data_type]: [0,0]
+[persist.vendor.radio.mtk_dsbp_support]: [1]
+[persist.vendor.radio.mtk_ps2_rat]: [L/W/G]
+[persist.vendor.radio.mtk_ps3_rat]: [G]
+[persist.vendor.radio.nitz_oper_code]: [60402,60401]
+[persist.vendor.radio.nitz_oper_lname]: [Inwi,Maroc Telecom]
+[persist.vendor.radio.nitz_oper_sname]: [Inwi,IAM]
+[persist.vendor.radio.raf1]: [81930]
+[persist.vendor.radio.raf2]: [81928]
+[persist.vendor.radio.rilj_nw_type1]: [9]
+[persist.vendor.radio.rilj_nw_type2]: [9]
+[persist.vendor.radio.sim.mode]: [2]
+[persist.vendor.radio.simswitch]: [1]
+[persist.vendor.radio.smart.data.switch]: [1]
+[persist.vendor.radio.terminal-based.cw]: [disabled_tbcw,disabled_tbcw]
+[persist.vendor.radio.volte_state]: [0]
+[persist.vendor.radio.wfc_state]: [0,0]
+[persist.vendor.ss.modem_version]: [0]
+[persist.vendor.sys.pay.fido]: [0058#0003]
+[persist.vendor.sys.pay.ifaa]: [1]
+[persist.vendor.sys.pq.adl.idx]: [0]
+[persist.vendor.sys.pq.bluelight.default]: [255]
+[persist.vendor.sys.pq.bluelight.strength]: [255]
+[persist.vendor.sys.pq.hdr.en]: [1]
+[persist.vendor.sys.pq.hfg.en]: [2]
+[persist.vendor.sys.pq.iso.shp.en]: [2]
+[persist.vendor.sys.pq.mdp.ccorr.en]: [0]
+[persist.vendor.sys.pq.mdp.color.dbg]: [1]
+[persist.vendor.sys.pq.mdp.color.idx]: [0]
+[persist.vendor.sys.pq.mdp.dre.en]: [2]
+[persist.vendor.sys.pq.mdp.hdrvp.dre.en]: [2]
+[persist.vendor.sys.pq.mdp.vp.dre.en]: [0]
+[persist.vendor.sys.pq.picmode]: [0
+]
+[persist.vendor.sys.pq.shp.idx]: [2]
+[persist.vendor.sys.pq.ultrares.en]: [2]
+[persist.vendor.sys.provision.status]: [true]
+[persist.vendor.vilte_support]: [1]
+[persist.vendor.viwifi_support]: [1]
+[persist.vendor.volte_support]: [1]
+[persist.vm.stackdump.threshold]: [0]
+[pm.dexopt.ab-ota]: [speed-profile]
+[pm.dexopt.bg-dexopt]: [speed-profile]
+[pm.dexopt.boot]: [verify]
+[pm.dexopt.first-boot]: [quicken]
+[pm.dexopt.inactive]: [verify]
+[pm.dexopt.install]: [speed-profile]
+[pm.dexopt.is_upgrade]: [false]
+[pm.dexopt.priv-apps-oob]: [false]
+[pm.dexopt.priv-apps-oob-list]: [ALL]
+[pm.dexopt.shared]: [speed]
+[qemu.hw.mainkeys]: [0]
+[radio.dataroaming.enable.suffix.subid]: [true]
+[ril.external.md]: [0]
+[ril.first.md]: [1]
+[ril.flightmode.poweroffMD]: [0]
+[ril.limit_service_mcc]: [604]
+[ril.radio.status.sim1]: [false]
+[ril.radio.status.sim2]: [true]
+[ril.radiooff.poweroffMD]: [0]
+[ril.read.imsi]: [1]
+[ril.telephony.mode]: [0]
+[rild.mark_switchuser]: [0]
+[ro.actionable_compatible_property.enabled]: [false]
+[ro.adb.secure]: [1]
+[ro.allow.mock.location]: [0]
+[ro.appsflyer.preinstall.path]: [/data/miui/pai/pre_install.appsflyer]
+[ro.audio.silent]: [0]
+[ro.audio.usb.period_us]: [16000]
+[ro.base_build]: [noah]
+[ro.baseband]: [unknown]
+[ro.board.platform]: [mt6765]
+[ro.boot.atm]: [disabled]
+[ro.boot.avb_version]: [1.1]
+[ro.boot.bootreason]: [reboot]
+[ro.boot.chipid]: [0x480cbe067f434c431f592542e5686193]
+[ro.boot.cpuid]: [0x480cbe067f434c431f592542e56861930686075f]
+[ro.boot.dtbo_idx]: [0]
+[ro.boot.flash.locked]: [1]
+[ro.boot.hardware]: [mt6765]
+[ro.boot.hwc]: [Global20]
+[ro.boot.hwlevel]: [3.0]
+[ro.boot.hwversion]: [2.23.0]
+[ro.boot.lcm_wp_x]: [0.303]
+[ro.boot.lcm_wp_y]: [0.308]
+[ro.boot.meta_log_disable]: [0]
+[ro.boot.mode]: [normal]
+[ro.boot.opt_c2k_lte_mode]: [0]
+[ro.boot.opt_c2k_support]: [0]
+[ro.boot.opt_eccci_c2k]: [1]
+[ro.boot.opt_lte_support]: [1]
+[ro.boot.opt_md1_support]: [9]
+[ro.boot.opt_md3_support]: [0]
+[ro.boot.opt_ps1_rat]: [Lf/Lt/W/G]
+[ro.boot.opt_using_default]: [1]
+[ro.boot.rpmb_flag]: [1]
+[ro.boot.secureboot]: [1]
+[ro.boot.serialno]: [0686075f7d25]
+[ro.boot.uniqueno]: [480cbe067f434c431f592542e56861930686075f]
+[ro.boot.vbmeta.avb_version]: [1.1]
+[ro.boot.vbmeta.device_state]: [locked]
+[ro.boot.vbmeta.digest]: [9897a0c143424965f8982cf58577a06b6ffa294eefdf442731108fe6fc769838]
+[ro.boot.vbmeta.hash_alg]: [sha256]
+[ro.boot.vbmeta.invalidate_on_error]: [yes]
+[ro.boot.vbmeta.size]: [2688]
+[ro.boot.verifiedbootstate]: [green]
+[ro.boot.veritymode]: [enforcing]
+[ro.bootimage.build.date]: [Wed May 27 17:02:03 WIB 2020]
+[ro.bootimage.build.date.utc]: [1590573723]
+[ro.bootimage.build.fingerprint]: [xiaomi/cereus/cereus:9/PPR1.180610.011/V11.0.4.0.PCGMIXM:user/release-keys]
+[ro.bootloader]: [unknown]
+[ro.bootmode]: [normal]
+[ro.build.characteristics]: [default]
+[ro.build.date]: [Wed May 27 17:02:03 WIB 2020]
+[ro.build.date.utc]: [1590573723]
+[ro.build.description]: [cereus-user 9 PPR1.180610.011 V11.0.4.0.PCGMIXM release-keys]
+[ro.build.display.id]: [SW_S98507AE1_V009_M13_XM_C3D_USR]
+[ro.build.display.wtid]: [SW_S98507BE1_V009_M13_XM_C3D_USR]
+[ro.build.display.wtid.ato]: [SW_S98507AE1_V001_M13_XM_C3D_USRD_ATO]
+[ro.build.display.wtid.miui]: [SW_S98507AE1_V001_M13_XM_C3D_USR_MP]
+[ro.build.fingerprint]: [xiaomi/cereus/cereus:9/PPR1.180610.011/V11.0.4.0.PCGMIXM:user/release-keys]
+[ro.build.flavor]: [cereus-user]
+[ro.build.host]: [mi-server]
+[ro.build.id]: [PPR1.180610.011]
+[ro.build.product]: [cereus]
+[ro.build.software.version]: [9.1_11]
+[ro.build.system_root_image]: [true]
+[ro.build.tags]: [release-keys]
+[ro.build.type]: [user]
+[ro.build.user]: [builder]
+[ro.build.version.all_codenames]: [REL]
+[ro.build.version.base_os]: []
+[ro.build.version.codename]: [REL]
+[ro.build.version.incremental]: [V11.0.4.0.PCGMIXM]
+[ro.build.version.min_supported_target_sdk]: [17]
+[ro.build.version.preview_sdk]: [0]
+[ro.build.version.release]: [9]
+[ro.build.version.sdk]: [28]
+[ro.build.version.security_patch]: [2020-05-01]
+[ro.camera.sound.forced]: [0]
+[ro.carrier]: [unknown]
+[ro.channelid.ucbrowserintl]: [/cust/etc/ucconfiginfo]
+[ro.channelid.ucnewsintl]: [/system/etc/ucintlconfiginfo]
+[ro.colorpick_adjust]: [true]
+[ro.com.android.dataroaming]: [false]
+[ro.com.android.mobiledata]: [true]
+[ro.com.google.clientidbase]: [android-xiaomi-rev1]
+[ro.com.google.gmsversion]: [9_202001]
+[ro.com.google.ime.theme_file]: [xiaomi_theme_20171222.zip]
+[ro.com.google.ime.themes_dir]: [/system/etc/gboard_theme]
+[ro.com.google.rlz_ap_whitelist]: [YG]
+[ro.com.google.rlzbrandcode]: [GOFU]
+[ro.config.alarm_alert]: [Alarm_Classic.ogg]
+[ro.config.elder-ringtone]: [Angel.mp3]
+[ro.config.media_vol_default]: [10]
+[ro.config.notification_sound]: [pixiedust.ogg]
+[ro.config.ringtone]: [Ring_Synth_04.ogg]
+[ro.config.sms_delivered_sound]: [MessageComplete.ogg]
+[ro.config.sms_received_sound]: [FadeIn.ogg]
+[ro.control_privapp_permissions]: [log]
+[ro.crypto.fs_crypto_blkdev]: [/dev/block/dm-2]
+[ro.crypto.state]: [encrypted]
+[ro.crypto.type]: [block]
+[ro.crypto.volume.filenames_mode]: [aes-256-cts]
+[ro.dalvik.vm.native.bridge]: [0]
+[ro.debuggable]: [0]
+[ro.device_owner]: [false]
+[ro.email_support_ucs2]: [0]
+[ro.expect.recovery_id]: [0xce71795991852ae50f8a43a3b95b68e65aa56255000000000000000000000000]
+[ro.factory_mode]: [0]
+[ro.fota.oem]: [Xiaomi]
+[ro.frp.pst]: [/dev/block/platform/bootdevice/by-name/frp]
+[ro.hardware]: [mt6765]
+[ro.have_aacencode_feature]: [1]
+[ro.kernel.zio]: [38,108,105,16]
+[ro.ksc5601_write]: [0]
+[ro.logd.kernel]: [false]
+[ro.logd.size.stats]: [64K]
+[ro.malloc.impl]: [jemalloc]
+[ro.mediatek.chip_ver]: [S01]
+[ro.mediatek.platform]: [MT6765]
+[ro.mediatek.version.branch]: [alps-mp-p0.mp3.tc8sp]
+[ro.mediatek.version.release]: [alps-mp-p0.mp3.tc8sp-V1.8_wingtech.p0mp3.k62v1.32.bsp_P30]
+[ro.mediatek.wlan.p2p]: [1]
+[ro.mediatek.wlan.wsc]: [1]
+[ro.mi.development]: [false]
+[ro.miui.cust_variant]: [ma]
+[ro.miui.customized_clientid]: [1]
+[ro.miui.has_cust_partition]: [true]
+[ro.miui.has_handy_mode_sf]: [1]
+[ro.miui.has_real_blur]: [1]
+[ro.miui.mcc]: [9604]
+[ro.miui.mnc]: [9999]
+[ro.miui.pai.preinstall.path]: [/data/miui/pai/]
+[ro.miui.region]: [MA]
+[ro.miui.support_fingerprint]: [true]
+[ro.miui.ui.fonttype]: [mipro]
+[ro.miui.ui.version.code]: [9]
+[ro.miui.ui.version.name]: [V11]
+[ro.miui.version.code_time]: [1559754000]
+[ro.mount.fs]: [EXT4]
+[ro.mtk_bsp_package]: [1]
+[ro.mtk_bt_support]: [1]
+[ro.mtk_cam_stereo_camera_support]: [1]
+[ro.mtk_deinterlace_support]: [1]
+[ro.mtk_enable_md1]: [1]
+[ro.mtk_perf_fast_start_win]: [1]
+[ro.mtk_perf_response_time]: [1]
+[ro.mtk_perf_simple_start_win]: [1]
+[ro.mtk_pow_perf_support]: [1]
+[ro.net.upload.benchmark.default]: [blocking]
+[ro.oem_unlock_supported]: [1]
+[ro.opa.eligible_device]: [true]
+[ro.opengles.version]: [196610]
+[ro.product.board]: [cereus]
+[ro.product.brand]: [xiaomi]
+[ro.product.cert]: [M1804C3DG]
+[ro.product.cpu.abi]: [armeabi-v7a]
+[ro.product.cpu.abi2]: [armeabi]
+[ro.product.cpu.abilist]: [armeabi-v7a,armeabi]
+[ro.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.product.cpu.abilist64]: []
+[ro.product.cuptsm]: [XIAOMI|ESE|02|01]
+[ro.product.device]: [cereus]
+[ro.product.first_api_level]: [27]
+[ro.product.locale]: [en-GB]
+[ro.product.locale.language]: [en]
+[ro.product.locale.region]: [MA]
+[ro.product.manufacturer]: [Xiaomi]
+[ro.product.mod_device]: [cereus_global]
+[ro.product.model]: [Redmi 6]
+[ro.product.name]: [cereus]
+[ro.product.subproject]: [S98507BE1]
+[ro.product.vendor.brand]: [xiaomi]
+[ro.product.vendor.device]: [cereus]
+[ro.product.vendor.manufacturer]: [Xiaomi]
+[ro.product.vendor.model]: [Redmi 6]
+[ro.product.vendor.name]: [cereus]
+[ro.product.wt.boardid]: [S98507BE1]
+[ro.product.wtdevice]: [S98507AE1]
+[ro.property_service.version]: [2]
+[ro.recovery_id]: [0xeceb86e8ce64242aeb6c6191175c910fbcf0f16b000000000000000000000000]
+[ro.revision]: [0]
+[ro.ril.factory_id]: [0]
+[ro.ril.miui.imei0]: [868151038131985]
+[ro.ril.miui.imei1]: [868151038131993]
+[ro.ril.oem.imei0]: [868151038131985]
+[ro.ril.oem.imei1]: [868151038131993]
+[ro.ril.oem.psno]: [18985/38UQ00940]
+[ro.ril.oem.sno]: [3Q828Z060544]
+[ro.ril.oem.svnflag]: [1]
+[ro.rom.zone]: [2]
+[ro.secure]: [1]
+[ro.secureboot.devicelock]: [1]
+[ro.secureboot.lockstate]: [locked]
+[ro.serialno]: [0686075f7d25]
+[ro.setupwizard.mode]: [OPTIONAL]
+[ro.sf.hwrotation]: [0]
+[ro.sf.lcd_density]: [320]
+[ro.sys.sdcardfs]: [1]
+[ro.sys.usb.bicr]: [no]
+[ro.sys.usb.charging.only]: [yes]
+[ro.sys.usb.mtp.whql.enable]: [0]
+[ro.sys.usb.storage.type]: [mtp]
+[ro.telephony.default_network]: [9,9]
+[ro.telephony.sim.count]: [2]
+[ro.treble.enabled]: [true]
+[ro.ussd_ksc5601]: [0]
+[ro.vendor.ap_info_monitor]: [0]
+[ro.vendor.build.date]: [Wed May 27 17:02:03 WIB 2020]
+[ro.vendor.build.date.utc]: [1590573723]
+[ro.vendor.build.fingerprint]: [xiaomi/cereus/cereus:9/PPR1.180610.011/V11.0.4.0.PCGMIXM:user/release-keys]
+[ro.vendor.build.security_patch]: [2019-03-05]
+[ro.vendor.connsys.dedicated.log]: [1]
+[ro.vendor.have_aee_feature]: [1]
+[ro.vendor.md_apps.load_date]: [2019/10/11 17:13:08 GMT +08:00]
+[ro.vendor.md_apps.load_gencfg]: [GEN93_USER]
+[ro.vendor.md_apps.load_type]: [user]
+[ro.vendor.md_apps.load_verno]: [MOLY.LR12A.R2.MP.V66.P18]
+[ro.vendor.md_apps.support]: [1]
+[ro.vendor.md_auto_setup_ims]: [1]
+[ro.vendor.md_log_memdump_wait]: [15]
+[ro.vendor.md_mims_support]: [2]
+[ro.vendor.md_prop_ver]: [1]
+[ro.vendor.mediatek.platform]: [MT6765]
+[ro.vendor.mediatek.version.branch]: [alps-mp-p0.mp3.tc8sp]
+[ro.vendor.mediatek.version.release]: [alps-mp-p0.mp3.tc8sp-V1.8_wingtech.p0mp3.k62v1.32.bsp_P30]
+[ro.vendor.mtk_aal_support]: [1]
+[ro.vendor.mtk_agps_app]: [1]
+[ro.vendor.mtk_audio_alac_support]: [1]
+[ro.vendor.mtk_audio_ape_support]: [1]
+[ro.vendor.mtk_audio_tuning_tool_ver]: [V2.2]
+[ro.vendor.mtk_blulight_def_support]: [1]
+[ro.vendor.mtk_cam_lomo_support]: [1]
+[ro.vendor.mtk_camera_app_version]: [2]
+[ro.vendor.mtk_config_max_dram_size]: [0x800000000]
+[ro.vendor.mtk_data_config]: [1]
+[ro.vendor.mtk_dhcpv6c_wifi]: [1]
+[ro.vendor.mtk_embms_support]: [1]
+[ro.vendor.mtk_emmc_support]: [1]
+[ro.vendor.mtk_exchange_support]: [1]
+[ro.vendor.mtk_external_sim_only_slots]: [0]
+[ro.vendor.mtk_external_sim_support]: [1]
+[ro.vendor.mtk_f2fs_enable]: [0]
+[ro.vendor.mtk_fd_support]: [1]
+[ro.vendor.mtk_flv_playback_support]: [1]
+[ro.vendor.mtk_gps_support]: [1]
+[ro.vendor.mtk_log_hide_gps]: [0]
+[ro.vendor.mtk_md_world_mode_support]: [1]
+[ro.vendor.mtk_microtrust_tee_support]: [1]
+[ro.vendor.mtk_modem_monitor_support]: [1]
+[ro.vendor.mtk_oma_drm_support]: [1]
+[ro.vendor.mtk_omacp_support]: [1]
+[ro.vendor.mtk_pq_color_mode]: [1]
+[ro.vendor.mtk_pq_support]: [2]
+[ro.vendor.mtk_protocol1_rat_config]: [Lf/Lt/W/G]
+[ro.vendor.mtk_ril_mode]: [c6m_1rild]
+[ro.vendor.mtk_rild_read_imsi]: [1]
+[ro.vendor.mtk_send_rr_support]: [1]
+[ro.vendor.mtk_single_bin_modem_support]: [1]
+[ro.vendor.mtk_slow_motion_support]: [1]
+[ro.vendor.mtk_tee_gp_support]: [1]
+[ro.vendor.mtk_wapi_support]: [1]
+[ro.vendor.mtk_wappush_support]: [1]
+[ro.vendor.mtk_wfd_support]: [1]
+[ro.vendor.mtk_widevine_drm_l3_support]: [1]
+[ro.vendor.mtk_wmv_playback_support]: [1]
+[ro.vendor.mtk_world_phone_policy]: [0]
+[ro.vendor.num_md_protocol]: [2]
+[ro.vendor.product.cpu.abilist]: [armeabi-v7a,armeabi]
+[ro.vendor.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.vendor.product.cpu.abilist64]: []
+[ro.vendor.rc]: [/vendor/etc/init/hw/]
+[ro.vendor.sim_me_lock_mode]: [0]
+[ro.vendor.sim_refresh_reset_by_modem]: [1]
+[ro.vendor.wfd.dummy.enable]: [1]
+[ro.vendor.wfd.iframesize.level]: [0]
+[ro.vendor.wlan.gen]: [gen4m]
+[ro.vndk.version]: [28]
+[ro.wifi.channels]: []
+[ro.wt.system_verity]: [yes]
+[ro.wt_final_release]: [0]
+[ro.zygote]: [zygote32]
+[ro.zygote.preload.enable]: [0]
+[security.perf_harden]: [1]
+[selinux.restorecon_recursive]: [/data/misc_ce/0]
+[service.bootanim.exit]: [1]
+[service.sf.present_timestamp]: [1]
+[setupwizard.feature.predeferred_enabled]: [false]
+[sys.boot.reason]: [shutdown,battery]
+[sys.boot_completed]: [1]
+[sys.dump_progress]: [1000]
+[sys.ipo.disable]: [1]
+[sys.ipo.pwrdncap]: [2]
+[sys.is_mem_low_level]: [0]
+[sys.kernel.firstboot]: [1677929634608]
+[sys.keyguard.screen_off_by_lid]: [false]
+[sys.logbootcomplete]: [1]
+[sys.miui.runtime.reboot]: [0]
+[sys.miui.screenshot]: [false]
+[sys.miui.shutdown.waittime]: [500]
+[sys.miui.user_authenticated]: [true]
+[sys.net.support.netprio]: [false]
+[sys.oem_unlock_allowed]: [0]
+[sys.panel.color]: [00]
+[sys.paper_mode_max_level]: [32]
+[sys.power.starttimes]: [1]
+[sys.rescue_boot_count]: [1]
+[sys.retaildemo.enabled]: [0]
+[sys.sysctl.extra_free_kbytes]: [12150]
+[sys.sysctl.tcp_def_init_rwnd]: [60]
+[sys.tp.grip_enable]: [0]
+[sys.uidcpupower]: []
+[sys.usb.config]: [mtp,adb]
+[sys.usb.configfs]: [1]
+[sys.usb.controller]: [musb-hdrc]
+[sys.usb.ffs.aio_compat]: [1]
+[sys.usb.ffs.ready]: [1]
+[sys.usb.state]: [mtp,adb]
+[sys.user.0.ce_available]: [true]
+[sys.wifitracing.started]: [1]
+[sys.wt_rpmb_status]: [1]
+[vendor.MB.running]: [0]
+[vendor.audiohal.modem_1.epof]: [0]
+[vendor.audiohal.recovery.mic_mute_on]: [0]
+[vendor.audiohal.rf_mode]: [1]
+[vendor.audiohal.ril.hd.voice.status]: []
+[vendor.audiohal.ril.speech.codec.info]: []
+[vendor.audiohal.speech.shm_init]: [1]
+[vendor.connsys.driver.ready]: [yes]
+[vendor.connsys.formeta.ready]: [yes]
+[vendor.debug.mtk.aee.status]: [free]
+[vendor.debug.mtk.aeev.status]: [free]
+[vendor.debug.pq.acaltm.dbg]: [0]
+[vendor.debug.pq.adl.dbg]: [0]
+[vendor.debug.pq.cz.isp.tuning]: [0]
+[vendor.debug.pq.dre.dbg]: [0]
+[vendor.debug.pq.dre.demowin.x]: [536805376]
+[vendor.debug.pq.dre.isp.tuning]: [0]
+[vendor.debug.pq.dredriver.blk]: [0]
+[vendor.debug.pq.dredriver.dbg]: [0]
+[vendor.debug.pq.dshp.en]: [2]
+[vendor.debug.pq.hdr.dbg]: [0]
+[vendor.debug.pq.hdrdriver.dbg]: [0]
+[vendor.debug.pq.hfg.isp.tuning]: [0]
+[vendor.debug.pq.shp.en]: [2]
+[vendor.gsm.external.sim.timeout]: [13,13]
+[vendor.gsm.gcf.testmode]: [0]
+[vendor.gsm.modem.vsim.capability]: [2,2]
+[vendor.gsm.project.baseband]: [WINGTECH_P0MP3_K62V1_64_BSP(LWCTG_6177M_A_6762_CUSTOM)]
+[vendor.gsm.ril.ct3g]: [0]
+[vendor.gsm.ril.ct3g.2]: [0]
+[vendor.gsm.ril.eboot]: [0]
+[vendor.gsm.ril.fulluicctype]: []
+[vendor.gsm.ril.fulluicctype.2]: [USIM]
+[vendor.gsm.ril.uicc.mccmnc.1]: [60401]
+[vendor.gsm.ril.uicctype]: []
+[vendor.gsm.ril.uicctype.2]: [USIM]
+[vendor.gsm.serial]: [3Q828Z060544                  18985/38UQ00940]
+[vendor.gsm.sim.retry.pin1.2]: [3]
+[vendor.gsm.sim.retry.pin2.2]: [1]
+[vendor.gsm.sim.retry.puk1.2]: [10]
+[vendor.gsm.sim.retry.puk2.2]: [10]
+[vendor.gsm.sim.ril.phbready]: [,true]
+[vendor.gsm.sim.ril.testsim.2]: [0]
+[vendor.gsm.sim.slot.lock.card.valid]: [0]
+[vendor.gsm.sim.slot.lock.card.valid.2]: [0]
+[vendor.gsm.sim.slot.lock.policy]: [0]
+[vendor.gsm.sim.slot.lock.service.capability]: [0]
+[vendor.gsm.sim.slot.lock.service.capability.2]: [0]
+[vendor.gsm.sim.slot.lock.state]: [1]
+[vendor.mtk.atci.boot_completed]: [1]
+[vendor.mtk.md1.status]: [ready]
+[vendor.mtk.vdec.waitkeyframeforplay]: [1]
+[vendor.net.ims.ipsec.version]: [2.0]
+[vendor.ril.active.md]: [9]
+[vendor.ril.apc.support]: [1]
+[vendor.ril.cdma.3g.dualact]: [0]
+[vendor.ril.cdma.card.type.1]: [255]
+[vendor.ril.cdma.card.type.2]: [2]
+[vendor.ril.cdma.ecclist]: []
+[vendor.ril.cdma.ecclist1]: []
+[vendor.ril.data.gsm_imsi1]: [604011854002661]
+[vendor.ril.data.gsm_mcc_mnc1]: [60401]
+[vendor.ril.data.gsm_spn1]: [004D61726F632054656C65636F6DFFFFFF]
+[vendor.ril.ecc.service.category.list]: []
+[vendor.ril.ecc.service.category.list.1]: []
+[vendor.ril.ecclist]: []
+[vendor.ril.ecclist1]: [112,-1;911,-1]
+[vendor.ril.fd.mode]: [1]
+[vendor.ril.ipo.radiooff]: [0]
+[vendor.ril.mtk]: [1]
+[vendor.ril.mux.ee.md1]: [0]
+[vendor.ril.mux.report.case]: [0]
+[vendor.ril.muxreport.run]: [0]
+[vendor.ril.nw.signalstrength.lte.1]: [2147483647,214748364]
+[vendor.ril.nw.signalstrength.lte.2]: [-96,11]
+[vendor.ril.nw.worldmode.activemode]: [1]
+[vendor.ril.nw.worldmode.keep_3g_mode]: [0]
+[vendor.ril.sim.onoff.state1]: [11]
+[vendor.ril.sim.onoff.state2]: [11]
+[vendor.ril.sim.onoff.support]: [0]
+[vendor.ril.simswitch.no_reset_support]: [1]
+[vendor.ril.simswitch.tpluswsupport]: [1]
+[vendor.rild.libargs]: [-d /dev/ttyC0]
+[vendor.rild.libpath]: [mtk-ril.so]
+[vendor.service.nvram_init]: [Ready]
+[vendor.soter.teei.googlekey.status]: [OK]
+[vendor.soter.teei.init]: [INIT_OK]
+[vendor.sys.camerainfo]: [com.android.camera]
+[vendor.sys.rpmb_state]: [22]
+[vold.decrypt]: [trigger_restart_framework]
+[vold.has_adoptable]: [1]
+[vold.has_quota]: [1]
+[vold.has_reserved]: [1]
+[vold.post_fs_data_done]: [1]
+[wifi.direct.interface]: [p2p0]
+[wifi.interface]: [wlan0]
+[wifi.tethering.interface]: [ap0]
+PASS: shell getenforce
+Enforcing

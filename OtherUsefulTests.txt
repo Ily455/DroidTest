@@ -1,0 +1,237 @@
+## Test screen functionality
+adb shell input touchscreen tap 44 45
+
+## Test LCD touch functionality
+adb shell dumpsys input
+
+## Test sensors functionality
+adb shell dumpsys sensorservice
+
+## Test GPS functionality
+adb shell am start -a android.intent.action.VIEW -d "geo:0,0?q=<latitude>,<longitude>(Label)"
+
+## Test Wi-Fi functionality
+adb shell am start -a android.settings.WIFI_SETTINGS
+
+## Test Bluetooth functionality
+adb shell am start -a android.settings.BLUETOOTH_SETTINGS
+
+## Test vibration functionality
+adb shell input keyevent KEYCODE_VIBRATE
+
+## Test camera functionality
+adb shell am start -a android.media.action.IMAGE_CAPTURE
+adb shell "su -c '## 0 > /sys/class/leds/flashlight/brightness'"
+
+## Test microphone functionality
+adb shell am start -a android.intent.action.CALL_PRIVILEGED -d tel:123
+
+## Test speaker functionality
+adb shell am start -a android.intent.action.CALL_PRIVILEGED -d tel:123
+
+## Test battery level and status
+adb shell dumpsys battery
+
+## Test storage capacity
+adb shell df
+
+## Test display resolution and density
+adb shell wm size
+adb shell wm density
+
+## Test app launch time
+adb shell am start -W -n com.package.name/.ActivityName
+
+## Test app memory usage
+adb shell dumpsys meminfo com.package.name
+
+## Test CPU usage
+adb shell top -n 1
+
+## Test network connectivity
+adb shell ping -n 10 www.google.com
+
+## Test internet speed
+adb shell wget -O /dev/null http://speedtest.tele2.net/10MB.zip
+
+## Test storage read/write speed
+adb shell dd if=/dev/zero of=/sdcard/testfile bs=1024 count=1024
+adb shell dd if=/sdcard/testfile of=/dev/null bs=1024 count=1024
+
+## Test USB connectivity
+adb shell lsusb
+
+## Test NFC functionality
+adb shell dumpsys nfc
+
+## Test call functionality
+adb shell am start -a android.intent.action.CALL -d tel:123
+
+## Test audio playback functionality
+adb shell am start -a android.intent.action.VIEW -d <path_to_audio_file> -t audio/*
+
+## Test video playback functionality
+adb shell am start -a android.intent.action.VIEW -d <path_to_video_file> -t video/*
+
+## Test flashlight functionality
+adb shell settings put system flashlight_available 1
+adb shell am start -a android.intent.action.MAIN -n com.android.systemui/com.android.systemui.flashlight.FlashlightActivity
+
+## Test proximity sensor functionality
+adb shell dumpsys proximity
+
+## Test touch screen responsiveness
+adb shell monkey -p com.android.monkey -v 500
+
+## Test app uninstallation
+adb uninstall com.package.name
+
+## Test USB debugging
+adb shell am start -a android.intent.action.MAIN -n com.android.settings/.DevelopmentSettings
+
+## Test app package information
+adb shell dumpsys package com.package.name
+
+## Test screen rotation functionality
+adb shell settings put system accelerometer_rotation 1
+adb shell settings put system user_rotation 1
+
+## Test audio recording functionality
+adb shell am start -a android.provider.MediaStore.RECORD_SOUND
+
+## Test video recording functionality
+adb shell am start -a android.media.action.VIDEO_CAPTURE
+
+## Test network usage statistics
+adb shell cat /proc/uid_stat/<UID>/tcp_rcv
+adb shell cat /proc/uid_stat/<UID>/tcp_snd
+
+## Test screenshot functionality
+adb shell input keyevent 120
+
+## Test GPS location settings
+adb shell settings put secure location_providers_allowed gps,network
+adb shell settings put secure location_pro
+
+## Test accelerometer functionality:
+adb shell dumpsys input
+
+## Test gyroscope functionality:
+adb shell dumpsys sensorservice
+
+## Test ambient light sensor functionality:
+adb shell dumpsys sensorservice
+
+## Test proximity sensor functionality:
+adb shell dumpsys sensorservice
+
+## Test fingerprint sensor functionality:
+adb shell dumpsys fingerprint
+
+## Test facial recognition sensor functionality:
+adb shell dumpsys face
+
+## Test heart rate sensor functionality:
+adb shell dumpsys sensorservice
+
+## Test barometer functionality:
+adb shell dumpsys sensorservice
+
+## Test compass functionality:
+adb shell dumpsys sensorservice
+
+## Test step counter functionality:
+adb shell dumpsys sensorservice
+
+## Test step detector functionality:
+adb shell dumpsys sensorservice
+
+## Test haptic feedback functionality:
+adb shell input keyevent KEYCODE_VOLUME_UP
+
+## Test notification LED functionality:
+adb shell dumpsys notification
+
+## Test USB OTG functionality:
+adb shell dumpsys usb
+
+## Test device encryption status:
+adb shell getprop ro.crypto.state
+
+## Test device root status:
+adb shell su -c 'if [ -z "$(which su)" ]; then ## "Device not rooted"; else ## "Device rooted"; fi'
+
+## Test device security patch level:
+adb shell getprop ro.build.version.security_patch
+
+## Test device Android version:
+adb shell getprop ro.build.version.release
+
+## Test device kernel version:
+adb shell uname -r
+
+## Test device manufacturer:
+adb shell getprop ro.product.manufacturer
+
+## Test device model:
+adb shell getprop ro.product.model
+
+## Test device serial number:
+adb shell getprop ro.serialno
+
+## Test device IMEI:
+adb shell service call iphonesubinfo 1
+
+## Test device ICCID:
+adb shell service call iphonesubinfo 4
+
+## Test device SIM card status:
+adb shell service call iphonesubinfo 5
+
+## Test device network operator name:
+adb shell getprop gsm.operator.alpha
+
+## Test device network type:
+adb shell getprop gsm.network.type
+
+## Test device network signal strength:
+adb shell dumpsys telephony.registry | grep 'mSignalStrength'
+
+## Test device mobile data status:
+adb shell settings get global mobile_data
+
+## Test device Wi-Fi MAC address:
+adb shell cat /sys/class/net/wlan0/address
+
+## Test device Bluetooth MAC address:
+adb shell cat /sys/class/bluetooth/hci0/address
+
+## Test device battery health:
+adb shell dumpsys battery
+
+## Test device battery temperature:
+adb shell dumpsys battery
+
+## Test device battery voltage:
+adb shell dumpsys battery
+
+## Test device battery capacity:
+adb shell dumpsys batterystats --checkin | grep 'BATTERY_CAPACITY'
+
+## Test device screen-on time:
+adb shell dumpsys battery | grep 'Screen on'
+
+## Test device uptime:
+adb shell uptime
+
+## Test device CPU frequency:
+adb shell cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
+
+## Test device CPU temperature:
+adb shell cat /sys/class/thermal/thermal_zone0/temp
+
+## Test device RAM information:
+adb shell cat /proc/meminfo
+
+## Test device storage information:
+adb shell df -h
