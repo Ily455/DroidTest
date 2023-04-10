@@ -1,0 +1,1 @@
+#turn on "developer options" and then "usb debugging".
