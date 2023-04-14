@@ -1,4 +1,4 @@
-DroidTester
+DroidTest
 This script allows you to run multiple ADB commands and display their status. It also provides several options to customize the behavior of the script, such as saving the output to a file or displaying verbose output.
 
 
@@ -24,7 +24,7 @@ Here's an example of how to use the script:
 
 
 
-python DroidTester.py -v -V verbose_output.txt -s output.txt -f failed.txt -n
+python DroidTest.py -v -V verbose_output.txt -s output.txt -f failed.txt -n
 
 
 
