@@ -1,13 +1,16 @@
-DroidTest
+#DroidTest
+
 This script allows you to run multiple ADB commands and display their status. It also provides several options to customize the behavior of the script, such as saving the output to a file or displaying verbose output.
 
 
-Usage
+##Usage
+
 To use the script, you need to have ADB installed on your system and accessible from the command line. You can run the script with the following command:
 python DroidTester.py [-h] [-v] [-V FILE] [-s FILE] [-f FILE] [-n]
 
 
-Arguments
+##Arguments
+
 The script supports the following command line arguments:
 
 
@@ -19,7 +22,8 @@ The script supports the following command line arguments:
 -n, --count: display the number of successes and failures
 
 
-Example
+##Example
+
 Here's an example of how to use the script:
 
 
@@ -31,7 +35,8 @@ python DroidTest.py -v -V verbose_output.txt -s output.txt -f failed.txt -n
 This command will run the script with verbose output, save the verbose output to a file named verbose_output.txt, save all normal output to a file named output.txt, save all failed output to a file named failed.txt, and display the number of successes and failures.
 
 
-Customization
+##Customization
+
 The script can be customized by modifying the following variables:
 
 
@@ -46,6 +51,7 @@ normal_file: the name of the file to save normal output to
 You can modify these variables to change the behavior of the script to suit your needs.
 
 
-Contributions
+##Contributions
+
 If you find any issues or have suggestions for improving the script, please feel free to open an issue or submit a pull request on GitHub.
 
