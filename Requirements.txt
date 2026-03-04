@@ -1,1 +1,1 @@
-#turn on "developer options" and then "usb debugging".
+# No third-party dependencies required.
