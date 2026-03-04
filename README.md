@@ -21,6 +21,34 @@ DroidTest is a small command-line runner for Android `adb` diagnostics. It reads
 - `list.txt` — default command list.
 - `tests/` — unit tests.
 
+## Connect your Android device
+
+1. Enable **Developer options** on the phone:
+   - Open **Settings → About phone**.
+   - Tap **Build number** 7 times.
+2. Enable **USB debugging**:
+   - Open **Settings → Developer options**.
+   - Turn on **USB debugging**.
+3. Connect the phone to your machine via USB.
+4. Accept the RSA authorization prompt on the phone (**Allow USB debugging**).
+5. Verify ADB can see your device:
+
+```bash
+adb devices
+```
+
+You should see your device serial with `device` status. If you have multiple connected devices, run DroidTest with `--device <serial>`.
+
+### Quick troubleshooting
+
+- If the device shows as `unauthorized`, revoke USB debugging authorizations on the phone and reconnect.
+- If no device appears, check your USB cable/port and ensure ADB is installed and available in `PATH`.
+- Restart ADB if needed:
+
+```bash
+adb kill-server && adb start-server
+```
+
 ## Usage
 
 ```bash
