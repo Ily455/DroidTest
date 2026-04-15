@@ -4,7 +4,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 import shlex
 import subprocess
-from typing import Iterable
+from typing import Iterable, Iterator
 
 
 @dataclass
@@ -44,10 +44,16 @@ def run_adb_commands(
     *,
     device_serial: str | None = None,
     timeout: float | None = None,
-) -> list[CommandResult]:
-    """Run adb commands and capture command outcomes."""
-    results: list[CommandResult] = []
+) -> Iterator[CommandResult]:
+    """Yield a CommandResult for each adb command.
 
+    FIX: changed from returning list[CommandResult] to Iterator[CommandResult].
+    The previous implementation executed all commands upfront and returned a
+    fully-evaluated list, which meant --stop-on-failure in the CLI had no effect
+    on actual execution — it only stopped processing already-completed results.
+    Yielding one result at a time lets the caller break early and truly halt
+    further command execution.
+    """
     for command in commands:
         adb_command = ["adb"]
         if device_serial:
@@ -69,19 +75,22 @@ def run_adb_commands(
                 stderr=completed.stderr.strip(),
             )
         except subprocess.TimeoutExpired as exc:
+            # FIX: removed unnecessary isinstance(exc.stdout, str) check.
+            # subprocess.run is called with text=True, so exc.stdout is always
+            # str | None — the bytes branch was unreachable.
             result = CommandResult(
                 command=command,
                 returncode=124,
-                stdout=(exc.stdout or "").strip() if isinstance(exc.stdout, str) else "",
+                stdout=(exc.stdout or "").strip(),
                 stderr=f"Timed out after {timeout}s",
             )
 
-        results.append(result)
-
-    return results
+        yield result
 
 
-def split_results(results: Iterable[CommandResult]) -> tuple[list[CommandResult], list[CommandResult]]:
+def split_results(
+    results: Iterable[CommandResult],
+) -> tuple[list[CommandResult], list[CommandResult]]:
     success: list[CommandResult] = []
     failed: list[CommandResult] = []
     for result in results:

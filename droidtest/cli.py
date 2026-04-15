@@ -25,8 +25,14 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("-d", "--device", help="ADB device serial to target (adb -s).")
     parser.add_argument("-t", "--timeout", type=float, default=None, help="Per-command timeout in seconds.")
     parser.add_argument("-v", "--verbose", action="store_true", help="Print stdout/stderr per command.")
-    parser.add_argument("-S", "--success-only", action="store_true", help="Show only successful commands.")
-    parser.add_argument("-F", "--fail-only", action="store_true", help="Show only failed commands.")
+
+    # FIX: made --success-only and --fail-only mutually exclusive.
+    # Previously both flags could be passed together, producing the same output
+    # as passing neither (show everything), which was unexpected behavior.
+    filter_group = parser.add_mutually_exclusive_group()
+    filter_group.add_argument("-S", "--success-only", action="store_true", help="Show only successful commands.")
+    filter_group.add_argument("-F", "--fail-only", action="store_true", help="Show only failed commands.")
+
     parser.add_argument("--stop-on-failure", action="store_true", help="Stop execution after first failed command.")
     parser.add_argument("--json", dest="json_file", help="Write full results as JSON file.")
     parser.add_argument("--success-file", help="Append successful command details to a file.")
@@ -53,6 +59,9 @@ def main() -> int:
         print("No commands found in input file.")
         return 1
 
+    # run_adb_commands is now a generator — results are yielded one at a time.
+    # This means break (from --stop-on-failure) actually halts execution of
+    # subsequent adb commands, not just processing of already-completed ones.
     results = []
     for result in run_adb_commands(commands, device_serial=args.device, timeout=args.timeout):
         results.append(result)
@@ -66,8 +75,10 @@ def main() -> int:
             if args.stop_on_failure:
                 break
 
-        show = (not args.success_only and not args.fail_only) or (args.success_only and result.ok) or (
-            args.fail_only and not result.ok
+        show = (
+            (not args.success_only and not args.fail_only)
+            or (args.success_only and result.ok)
+            or (args.fail_only and not result.ok)
         )
         if show:
             status = "PASS" if result.ok else "FAIL"
