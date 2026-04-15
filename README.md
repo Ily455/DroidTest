@@ -2,52 +2,40 @@
 
 DroidTest is a small command-line runner for Android `adb` diagnostics. It reads commands from a file, executes them in sequence, and produces a clean pass/fail summary.
 
-## What was improved
+## What it does
 
-- Refactored into a package structure (`droidtest/`) instead of one large script.
-- Safer command parsing with `shlex.split`.
-- Better command file parsing (ignores comments and blank lines).
-- Optional per-command timeout.
-- Optional `adb -s <serial>` device targeting.
-- Optional stop-on-first-failure mode.
-- JSON report export.
-- Consistent process exit codes (`0` success, `2` when any command fails).
+- Runs a list of `adb` subcommands from a file
+- Reports each command as PASS or FAIL
+- Optionally filters output, stops on first failure, exports JSON reports
+- Supports per-command timeouts and multi-device targeting
 
 ## Project structure
 
-- `DroidTest.py` — backward-compatible launcher.
-- `droidtest/core.py` — command loading and execution logic.
-- `droidtest/cli.py` — argument parsing and output behavior.
-- `list.txt` — default command list.
-- `tests/` — unit tests.
+- `DroidTest.py` — entry point (backwards-compatible launcher)
+- `droidtest/core.py` — command loading and execution logic
+- `droidtest/cli.py` — argument parsing and output behavior
+- `list.txt` — default command list
+- `tests/` — unit tests
+- `backup.py` — original single-file version, kept for reference
 
 ## Connect your Android device
 
-1. Enable **Developer options** on the phone:
-   - Open **Settings → About phone**.
-   - Tap **Build number** 7 times.
-2. Enable **USB debugging**:
-   - Open **Settings → Developer options**.
-   - Turn on **USB debugging**.
-3. Connect the phone to your machine via USB.
-4. Accept the RSA authorization prompt on the phone (**Allow USB debugging**).
-5. Verify ADB can see your device:
+1. Enable **Developer options**: Settings → About phone → tap **Build number** 7 times
+2. Enable **USB debugging**: Settings → Developer options → USB debugging ON
+3. Connect via USB and accept the RSA authorization prompt on the phone
+4. Verify ADB sees your device:
 
 ```bash
 adb devices
 ```
 
-You should see your device serial with `device` status. If you have multiple connected devices, run DroidTest with `--device <serial>`.
+You should see your device serial with `device` status. If multiple devices are connected, use `--device <serial>`.
 
-### Quick troubleshooting
+### Troubleshooting
 
-- If the device shows as `unauthorized`, revoke USB debugging authorizations on the phone and reconnect.
-- If no device appears, check your USB cable/port and ensure ADB is installed and available in `PATH`.
-- Restart ADB if needed:
-
-```bash
-adb kill-server && adb start-server
-```
+- Device shows `unauthorized` → revoke USB debugging authorizations on the phone and reconnect
+- No device appears → check USB cable, ensure `adb` is in PATH
+- Restart ADB: `adb kill-server && adb start-server`
 
 ## Usage
 
@@ -55,18 +43,18 @@ adb kill-server && adb start-server
 python DroidTest.py [options]
 ```
 
-### Key options
-
-- `-c, --commands-file` Path to commands list file (default: `list.txt`)
-- `-d, --device` ADB device serial (`adb -s ...`)
-- `-t, --timeout` Per-command timeout in seconds
-- `-v, --verbose` Print command output inline
-- `-S, --success-only` Print only successful commands
-- `-F, --fail-only` Print only failed commands
-- `--stop-on-failure` Stop after first failed command
-- `--json FILE` Save full execution report as JSON
-- `--success-file FILE` Append pass details to file
-- `--fail-file FILE` Append failure details to file
+| Flag | Description |
+|------|-------------|
+| `-c, --commands-file` | Path to commands file (default: `list.txt`) |
+| `-d, --device` | ADB device serial (`adb -s`) |
+| `-t, --timeout` | Per-command timeout in seconds |
+| `-v, --verbose` | Print command output inline |
+| `-S, --success-only` | Show only successful commands |
+| `-F, --fail-only` | Show only failed commands (mutually exclusive with `-S`) |
+| `--stop-on-failure` | Stop executing after the first failed command |
+| `--json FILE` | Save full report as JSON |
+| `--success-file FILE` | Append pass details to file |
+| `--fail-file FILE` | Append fail details to file |
 
 ### Example
 
@@ -76,18 +64,31 @@ python DroidTest.py -v --timeout 8 --json report.json --fail-file failed.log
 
 ## Commands file format
 
-The default command file is `list.txt`. Each non-empty, non-comment line should be an `adb` subcommand:
+Each non-empty, non-comment line is an `adb` subcommand. DroidTest prefixes `adb` automatically:
 
 ```text
 # comments are allowed
 shell getprop ro.product.model
 shell dumpsys battery
+shell df -h
 ```
-
-DroidTest prefixes each line with `adb` automatically.
 
 ## Running tests
 
 ```bash
 python -m unittest discover -s tests -p 'test_*.py'
 ```
+
+## Exit codes
+
+| Code | Meaning |
+|------|---------|
+| `0` | All commands passed |
+| `1` | No commands found in input file |
+| `2` | One or more commands failed |
+
+## Requirements
+
+- Python 3.10+
+- `adb` installed and available in PATH
+- No third-party Python dependencies
